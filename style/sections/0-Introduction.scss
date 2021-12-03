@@ -1,0 +1,213 @@
+@import "../main/global.scss";
+
+#introduction
+{
+    margin-top: 14vh;
+    height: 60vh;
+    width: 100%;
+
+    & #intro 
+    {
+        margin-left: 16vh;
+        margin-top: 3vh;
+        width: 70vh;
+        & h1
+        {
+            font-size: $title-size;
+            text-align: center;
+            margin-bottom: 3vh;
+        }
+        & p 
+        {
+            font-weight: 510;
+            font-size: 2vh;
+        }
+    }
+}
+
+#card 
+{
+    position: inherit;
+    z-index: 5;
+    $h: 50vh;
+    height: $h;
+    float: right;
+    margin-right: -10vh;
+    margin-left: auto;
+    min-width: $h*0.61;
+    max-width: $h*0.61;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 2vh;
+    background: linear-gradient(140deg, #FFFFFF, $gray 150.00%);
+    filter: $shadow-lg;
+
+    & img {
+        border-radius: 50%;
+        display: block;
+        margin-top: 3vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vh;
+    }
+    & h2 {
+        font-size: 3.5vh;
+        font-weight: 500;
+        margin-top: 3vh;
+        display: block;
+        width: 100%;
+    }
+    & h3 {
+        font-size: 2.4vh;
+        margin-top: 2vh;
+        display: block;
+        width: 100%;
+    }
+    & .horizontal-line
+    {
+        display: block;
+        $spacing: 2.6vh;
+        margin-top: $spacing;
+        margin-bottom: $spacing;
+        border-top: 0.5vh solid #1b1b1b;
+        width: 16vh;
+        margin-left:auto; margin-right:auto;
+    }
+}
+
+@media (max-aspect-ratio: 1350/1300)//, (min-aspect-ratio:1000/1300)
+{
+    #card 
+    {
+        float: left !important; 
+        $h: 40vh;
+        height: $h;
+        min-width: $h*0.61;
+        max-width: $h*0.61;
+        margin-right: auto;
+
+        & img {
+            width: 15vh;
+        }
+        & h2 {
+            font-size: 3.5vh*3/4;
+        }
+        & h3 {
+            font-size: 2.4vh*3/4;
+        }
+        & .horizontal-line
+        {
+            border-top: 0.5vh*3/4 solid #1b1b1b;
+            width: 16vh *3/4;
+        }
+    }
+    #introduction #intro
+    {
+        width: 45vw;
+        margin-right: -3vw !important;
+        & p 
+        {
+            font-size: 1.7vh;
+        }
+    }
+}
+@media (max-aspect-ratio: 1000/1300)
+{
+    #card 
+    {
+        display: block;
+        $h: 20vh;
+        height: $h;
+        margin-top: 8vh;
+        margin-right: auto;
+        margin-left: auto;
+        min-width: $h*2.61;
+        max-width: $h*2.61;
+        background: transparent;
+        //filter: none;
+
+        & img {
+            float: left;
+            border-radius: 50%;
+            display: block;
+            margin-top: 0;
+            margin-left: -3vw;
+            margin-right: auto;
+            width: 17vh;
+            aspect-ratio: 1 !important;
+        }
+        & h2 {
+            font-size: 3.5vh;
+            font-weight: 500;
+            margin-top: 5vh;
+            display: block;
+            width: 100%;
+        }
+        & h3 {
+            font-size: 2.4vh;
+            margin-top: 2vh;
+            display: block;
+            width: 100%;
+        }
+        & br
+        {
+            display:none;
+        }
+        & .horizontal-line
+        {
+            display: none;
+        }
+    }
+    #introduction
+    {
+        margin-top: 3vh;
+        height: 90vh;
+        width: 100%;
+        flex-wrap: wrap;
+    
+        & #intro 
+        {
+            margin-left: 16vh;
+            margin-top: 0vh;
+            width: 70vh;
+            & h1
+            {
+                font-size: $title-size;
+                text-align: center;
+                margin-bottom: 3vh;
+            }
+            & p 
+            {
+                text-align: center;
+                font-weight: 510;
+                font-size: 2vh;
+            }
+        }
+    }
+}
+
+@media (max-aspect-ratio: 710/1300)
+{
+    #card 
+    {
+        & img
+        {
+            transform: scale(0.7);
+            margin-left: 4vw;
+        }
+
+        & h2 {
+            font-size: 3.0vh;
+            font-weight: 500;
+            margin-top: 5vh;
+            display: block;
+            width: 90%;
+        }
+        & h3 {
+            font-size: 2.4vh;
+            margin-top: 2vh;
+            display: block;
+            width: 90%;
+        }
+    }
+}
