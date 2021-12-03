@@ -2,7 +2,8 @@
     "version": 3,
     "mappings": "",
     "sources": [
-        "header.scss"
+        "header.scss",
+        "global.scss"
     ],
     "names": [],
     "file": "header.css"
