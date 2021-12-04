@@ -1,4 +1,5 @@
 nav {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -7,25 +8,59 @@ nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 6vh;
+  height: 90px;
   background-color: #22262a;
   position: fixed;
   top: 0;
   width: 100% !important;
 }
 
-.logo {
-  color: #e4e4e4;
-  font-size: 20px;
+@media screen and (min-width: 768px) {
+  nav {
+    overflow: hidden;
+  }
 }
 
-.nav-links {
+#name {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#name img {
+  margin-right: 5px;
+  width: 2.4rem;
+  height: 2.4rem;
+  aspect-ratio: 1;
+}
+
+#name span {
+  font-weight: 350;
+  color: #B5B5B7;
+}
+
+#name h4 {
+  color: #e4e4e4;
+  font-size: 1.45rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.nav-links {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 30%;
 }
 
 .nav-links li {
@@ -33,9 +68,11 @@ nav {
 }
 
 .nav-links a {
+  font-family: 'Ubuntu', sans-serif;
   color: #e4e4e4;
   text-decoration: none;
   font-weight: 400;
+  font-size: 1.15rem;
 }
 
 .nav-links .hideOnCollapse {
@@ -55,10 +92,25 @@ nav {
   transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
+  .nav-links {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1124px) {
   .nav-links {
     position: relative;
-    width: 50%;
+    width: 40%;
+  }
+  .nav-links a {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  #name span {
+    display: none;
   }
 }
 
@@ -67,10 +119,11 @@ nav {
     display: none;
   }
   .nav-links {
+    z-index: 5;
     position: absolute;
     right: 0;
     height: 97vh;
-    top: 5vh;
+    top: 89px;
     background-color: #22262a;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -85,27 +138,47 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 40%;
-    font-size: 1.5rem;
+    width: 30%;
+    font-size: 1.4vw;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
-    -webkit-transition: -webkit-transform 0.5s ease-in;
-    transition: -webkit-transform 0.5s ease-in;
-    transition: transform 0.5s ease-in;
-    transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    -webkit-transition: -webkit-transform 0.4s ease-in;
+    transition: -webkit-transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+    padding-left: 3vw;
   }
   .nav-links li {
     opacity: 0;
+  }
+  .nav-links #last-nav-li {
+    margin-bottom: 10vh;
   }
   .burger {
     display: block;
     cursor: pointer;
   }
+  #name img {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}
+
+@media screen and (max-height: 900px) {
+  #name h4 {
+    font-size: 1.2rem;
+  }
+  nav {
+    height: 60px;
+  }
+  .nav-links {
+    top: 59px;
+  }
 }
 
 .nav-active {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
 }
 
 @-webkit-keyframes navLinkFade {
