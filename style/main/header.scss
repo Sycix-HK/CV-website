@@ -51,6 +51,24 @@ nav
         font-family: 'Montserrat', sans-serif;
     }
 }
+.flag
+{
+    margin-left: 2vw;
+    border-radius: 3px;
+    width: 13px !important;
+    transform: scale(2.4);
+    opacity: 0.4;
+    filter: $shadow-sm;
+    transition: opacity 0.13s ease-in;
+    &:hover
+    {
+        opacity: 1;
+    }
+}
+.flag.active
+{
+    display: none;
+}
 .nav-links
 {
     padding: 0;
@@ -101,7 +119,7 @@ nav
         width: 40%;
         & a
         {
-            font-size: 1rem;
+            font-size: 0.94rem;
         }
     }
 }
@@ -113,6 +131,10 @@ nav
         {
             display: none;
         }
+    }
+    .nav-links a
+    {
+        font-size: 0.90rem;
     }
 }
 
@@ -146,6 +168,14 @@ nav
         #last-nav-li
         {
             margin-bottom: 10vh;
+        }
+        & a
+        {
+            font-size: 1.2rem;
+        }
+        .flag
+        {
+            opacity: 1;
         }
     }
     .burger

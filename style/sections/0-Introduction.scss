@@ -1,1 +1,94 @@
 @import "../main/global.scss";
+
+#introduction
+{
+    width: 100%;
+}
+
+#introduction-grid
+{
+    position: relative;
+    z-index: 10;
+    height: 75vh;
+    margin-top: 11vh;
+    margin-left: 16vw;
+    margin-right: 21vw;
+    display: grid;
+    grid-template-areas: 
+        "card hello"
+        "card desc";
+    grid-template-columns: 5fr 5fr;
+    grid-template-rows: 2fr 5fr;
+}
+#card
+{
+    grid-area: card;
+
+    $size: 57vh;
+    height: $size;
+    width: $size*0.6;
+    border-radius: 2vh;
+    background: linear-gradient(140deg, #FFFFFF, $gray 150.00%);
+    filter: $shadow-lg;
+    margin: auto;
+    & img {
+        border-radius: 50%;
+        display: block;
+        margin-top: 5vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 20vh;
+    }
+    & h2 {
+        font-size: 3.5vh;
+        font-weight: 500;
+        margin-top: 6vh;
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        color: $element;
+    }
+    & h3 {
+        font-size: 2.4vh;
+        font-weight: 400;
+        margin-top: 4vh;
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: $element;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    & .horizontal-line
+    {
+        display: block;
+        $spacing: 2.6vh;
+        margin-top: $spacing;
+        margin-bottom: $spacing;
+        border-top: 0.5vh solid #313131;
+        width: 16vh;
+        margin-left:auto; margin-right:auto;
+    }
+}
+#hello
+{
+    grid-area: hello;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif; //font-family: 'Ubuntu', sans-serif;
+    font-size: $title-size;
+    max-height: 5vh;
+    color: $element;
+    & *
+    {
+        display: block;
+    }
+}
+#desc 
+{
+    grid-area: desc;
+
+    margin-bottom: 8vh;
+}

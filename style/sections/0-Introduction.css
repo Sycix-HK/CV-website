@@ -1,1 +1,105 @@
-/* No CSS *//*# sourceMappingURL=0-Introduction.css.map */
+#introduction {
+  width: 100%;
+}
+
+#introduction-grid {
+  position: relative;
+  z-index: 10;
+  height: 75vh;
+  margin-top: 11vh;
+  margin-left: 16vw;
+  margin-right: 21vw;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "card hello" "card desc";
+  -ms-grid-columns: 5fr 5fr;
+      grid-template-columns: 5fr 5fr;
+  -ms-grid-rows: 2fr 5fr;
+      grid-template-rows: 2fr 5fr;
+}
+
+#card {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: card;
+  height: 57vh;
+  width: 34.2vh;
+  border-radius: 2vh;
+  background: linear-gradient(140deg, #FFFFFF, #677077 150%);
+  -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+          filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+  margin: auto;
+}
+
+#card img {
+  border-radius: 50%;
+  display: block;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vh;
+}
+
+#card h2 {
+  font-size: 3.5vh;
+  font-weight: 500;
+  margin-top: 6vh;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #22262a;
+}
+
+#card h3 {
+  font-size: 2.4vh;
+  font-weight: 400;
+  margin-top: 4vh;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #22262a;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+#card .horizontal-line {
+  display: block;
+  margin-top: 2.6vh;
+  margin-bottom: 2.6vh;
+  border-top: 0.5vh solid #313131;
+  width: 16vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#hello {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: hello;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14vh;
+  max-height: 5vh;
+  color: #22262a;
+}
+
+#hello * {
+  display: block;
+}
+
+#desc {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: desc;
+  margin-bottom: 8vh;
+}
+/*# sourceMappingURL=0-Introduction.css.map */

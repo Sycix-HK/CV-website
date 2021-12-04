@@ -53,6 +53,27 @@ nav {
   font-family: 'Montserrat', sans-serif;
 }
 
+.flag {
+  margin-left: 2vw;
+  border-radius: 3px;
+  width: 13px !important;
+  -webkit-transform: scale(2.4);
+          transform: scale(2.4);
+  opacity: 0.4;
+  -webkit-filter: drop-shadow(0.3vh 0.2vh 0.3vh #1b1b1b);
+          filter: drop-shadow(0.3vh 0.2vh 0.3vh #1b1b1b);
+  -webkit-transition: opacity 0.13s ease-in;
+  transition: opacity 0.13s ease-in;
+}
+
+.flag:hover {
+  opacity: 1;
+}
+
+.flag.active {
+  display: none;
+}
+
 .nav-links {
   padding: 0;
   display: -webkit-box;
@@ -104,13 +125,16 @@ nav {
     width: 40%;
   }
   .nav-links a {
-    font-size: 1rem;
+    font-size: 0.94rem;
   }
 }
 
 @media screen and (max-width: 950px) {
   #name span {
     display: none;
+  }
+  .nav-links a {
+    font-size: 0.90rem;
   }
 }
 
@@ -153,6 +177,12 @@ nav {
   }
   .nav-links #last-nav-li {
     margin-bottom: 10vh;
+  }
+  .nav-links a {
+    font-size: 1.2rem;
+  }
+  .nav-links .flag {
+    opacity: 1;
   }
   .burger {
     display: block;
