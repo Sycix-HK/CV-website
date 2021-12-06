@@ -1,1 +1,67 @@
-/* No CSS *//*# sourceMappingURL=1-Details.css.map */
+#details {
+  z-index: 3;
+  position: relative;
+  height: 80vh;
+  background: linear-gradient(150deg, #252839, #22262a 100%);
+  -webkit-filter: drop-shadow(0 2vh 2vh #1b1b1b);
+          filter: drop-shadow(0 2vh 2vh #1b1b1b);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#details .detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#details .detail h2 {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2.7rem;
+  font-weight: 600;
+  margin-bottom: 13px;
+}
+
+#details .detail .line-h-sm {
+  margin-left: auto;
+  margin-right: auto;
+  height: 1px;
+  width: 7vw;
+  background-color: #B5B5B7;
+}
+
+#details .detail p {
+  text-align: center;
+  list-style: none;
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  word-spacing: 1px;
+  margin-top: 2vh;
+  margin-bottom: 0;
+}
+
+#details .detail p span {
+  color: #B5B5B7;
+  font-weight: 300;
+}
+/*# sourceMappingURL=1-Details.css.map */

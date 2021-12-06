@@ -3,7 +3,7 @@
 #introduction
 {
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     overflow-y: hidden;
 }
 
@@ -26,7 +26,7 @@
 
     $size: 64vh;
     height: $size*0.9;
-    width: $size*0.57;
+    width: $size*0.53;
     border-radius: 2vh;
     background: linear-gradient(140deg, #FFFFFF, $gray 150.00%);
     filter: $shadow-lg;
@@ -111,10 +111,10 @@
 }
 @media screen and (max-aspect-ratio: 854/1050)
 {
-        #introduction
+    #introduction
     {
         width: 100%;
-        height: 100vh;
+        height: 115vh;
         overflow-y: clip;
     }
     #introduction-grid

@@ -1,1 +1,59 @@
 @import "../main/global.scss";
+
+#details
+{
+    z-index: 3;
+    position: relative;
+    height: 80vh;
+    background: linear-gradient(150deg, $darkblue, $element 100.00%);
+    filter: drop-shadow(0 2vh 2vh $shadow);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    & .detail
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        & h2
+        {
+            font-family: $Montserrat;
+            text-align: center;
+            color: white;
+            letter-spacing: 1px;
+            font-size: 2.7rem;
+            font-weight: 600;
+            margin-bottom: 13px;
+        }
+        & .line-h-sm
+        {
+            margin-left: auto;
+            margin-right: auto;
+            height: 1px;
+            width: 7vw;
+            background-color: $paper;
+        }
+        & p
+        {
+            text-align: center;
+            list-style: none;
+            color: white;
+            font-family: $Ubuntu;
+            font-weight: 400;
+            font-size: 1.5rem;
+            word-spacing: 1px;
+            margin-top: 2vh;
+            margin-bottom: 0;
+
+            & span
+            {
+                color: $paper;
+                font-weight: 300;
+            }
+        }
+    }
+}
