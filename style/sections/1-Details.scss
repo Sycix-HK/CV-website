@@ -19,6 +19,8 @@
         align-items: center;
         justify-content: space-around;
 
+        filter: $shadow-md;
+
         & h2
         {
             font-family: $Montserrat;
@@ -55,5 +57,14 @@
                 font-weight: 300;
             }
         }
+    }
+    & #cardsocket
+    {
+        background-color: rgb(42, 42, 42);
+        box-shadow: $shadow-in-lg;
+        $size: 62vh;
+        height: $size*0.9;
+        width: $size*0.53;
+        border-radius: 2vh;
     }
 }

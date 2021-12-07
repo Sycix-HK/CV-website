@@ -162,7 +162,7 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 30%;
+    width: 60%;
     font-size: 1.4vw;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);

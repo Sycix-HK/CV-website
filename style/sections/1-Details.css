@@ -28,6 +28,8 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-filter: drop-shadow(0.8vh 0.5vh 0.6vh #1b1b1b);
+          filter: drop-shadow(0.8vh 0.5vh 0.6vh #1b1b1b);
 }
 
 #details .detail h2 {
@@ -63,5 +65,14 @@
 #details .detail p span {
   color: #B5B5B7;
   font-weight: 300;
+}
+
+#details #cardsocket {
+  background-color: #2a2a2a;
+  -webkit-box-shadow: inset 1vh 1vh 2vh #1b1b1b;
+          box-shadow: inset 1vh 1vh 2vh #1b1b1b;
+  height: 55.8vh;
+  width: 32.86vh;
+  border-radius: 2vh;
 }
 /*# sourceMappingURL=1-Details.css.map */
