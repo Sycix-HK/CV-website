@@ -13,6 +13,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 #details .detail {
@@ -28,29 +29,35 @@
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  -webkit-filter: drop-shadow(0.8vh 0.5vh 0.6vh #1b1b1b);
-          filter: drop-shadow(0.8vh 0.5vh 0.6vh #1b1b1b);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
 }
 
 #details .detail h2 {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: white;
   letter-spacing: 1px;
   font-size: 2.7rem;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 13px;
 }
 
 #details .detail .line-h-sm {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   margin-left: auto;
   margin-right: auto;
   height: 1px;
-  width: 7vw;
-  background-color: #B5B5B7;
+  width: 1vw;
+  background-color: black;
 }
 
 #details .detail p {
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
   text-align: center;
   list-style: none;
   color: white;
@@ -71,8 +78,45 @@
   background-color: #2a2a2a;
   -webkit-box-shadow: inset 1vh 1vh 2vh #1b1b1b;
           box-shadow: inset 1vh 1vh 2vh #1b1b1b;
-  height: 55.8vh;
-  width: 32.86vh;
+  height: 57.6vh;
+  width: 33.92vh;
   border-radius: 2vh;
+  display: -ms-grid;
+  display: grid;
+}
+
+#details #cardsocket #det-card {
+  -webkit-transform: translateY(100%) scale(1.1);
+          transform: translateY(100%) scale(1.1);
+  overflow-y: none;
+}
+
+.colored h2:not(.cardpiece) {
+  -webkit-filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+          filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  color: #0397D6 !important;
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+}
+
+.colored .line-h-sm {
+  -webkit-filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+          filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+  -webkit-transform: scale(1) !important;
+          transform: scale(1) !important;
+  width: 7vw !important;
+  background-color: #0397D6 !important;
+  -webkit-box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+          box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+}
+
+.colored p {
+  -webkit-filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+          filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b) !important;
+  -webkit-transform: scale(1.1) !important;
+          transform: scale(1.1) !important;
+  margin-top: 3vh !important;
 }
 /*# sourceMappingURL=1-Details.css.map */

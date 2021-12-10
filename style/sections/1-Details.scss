@@ -1,5 +1,7 @@
 @import "../main/global.scss";
 
+$poweruptime: all 0.5s ease-out;
+
 #details
 {
     z-index: 3;
@@ -12,6 +14,8 @@
     justify-content: space-around;
     align-items: center;
 
+    overflow-y: hidden;
+
     & .detail
     {
         display: flex;
@@ -19,28 +23,31 @@
         align-items: center;
         justify-content: space-around;
 
-        filter: $shadow-md;
+        transform: scale(0.95);
 
         & h2
         {
+            transition: $poweruptime;
             font-family: $Montserrat;
             text-align: center;
             color: white;
             letter-spacing: 1px;
             font-size: 2.7rem;
-            font-weight: 600;
+            font-weight: 500;
             margin-bottom: 13px;
         }
         & .line-h-sm
         {
+            transition: $poweruptime;
             margin-left: auto;
             margin-right: auto;
             height: 1px;
-            width: 7vw;
-            background-color: $paper;
+            width: 1vw;
+            background-color: black;
         }
         & p
         {
+            transition: $poweruptime;
             text-align: center;
             list-style: none;
             color: white;
@@ -62,9 +69,41 @@
     {
         background-color: rgb(42, 42, 42);
         box-shadow: $shadow-in-lg;
-        $size: 62vh;
+        $size: 64vh;
         height: $size*0.9;
         width: $size*0.53;
         border-radius: 2vh;
+        display: grid;
+
+        & #det-card
+        {
+            transform: translateY(100%) scale(1.1);
+            overflow-y: none;
+        }
+    }
+}
+
+.colored
+{
+    & h2:not(.cardpiece)
+    {
+        filter: $shadow-md !important;
+        transform: scale(1) !important;
+        color: $lightblue !important;
+        transform: scale(1.1) !important;
+    }
+    & .line-h-sm
+    {
+        filter: $shadow-md !important;
+        transform: scale(1) !important;
+        width: 7vw !important;
+        background-color: $lightblue !important;
+        box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+    }
+    & p
+    {
+        filter: $shadow-md !important;
+        transform: scale(1.1) !important;
+        margin-top: 3vh !important;
     }
 }

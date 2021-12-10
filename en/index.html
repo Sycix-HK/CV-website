@@ -82,9 +82,9 @@
     <section id="introduction">
         <canvas id="canvas"></canvas>
         <div id="introduction-grid">
-            <div id="card">
+            <div id="int-card" class="card">
                 <img src="../images/profile.png" alt="profilepicture">
-                <h2><b>Hoffmann <br> Kristóf</b></h2>
+                <h2><strong>Hoffmann <br> Kristóf</strong></h2>
                 <div class="horizontal-line"></div>
                 <h3>Software Developer</h3>
             </div>
@@ -101,9 +101,40 @@
     <section id="details">
         <div class="detail one parallax" parallax-speed="4"  >  <h2>Birthdate</h2> <div class="line-h-sm"></div> <p>2000. 04. 16</p> <p> <span>Tatabánya, Hungary</span> </p> </div>
         <div class="detail two parallax" parallax-speed="4" >  <h2>Education</h2> <div class="line-h-sm"></div> <p>Eötvös Loránd University</p> <p><span>Computer Science</span></p> <p><span>2020 - current</span></p> </div>
-        <div id="cardsocket"></div>
+        <div id="cardsocket">
+            <div id="card-wrapper">
+                <div id="card-anim-border"></div>
+                <div id="det-card" class="card">                
+                    <img src="../images/profile.png" alt="profilepicture">
+                    <h2 class="cardpiece"><strong>Hoffmann <br> Kristóf</strong></h2>
+                    <div class="horizontal-line"></div>
+                    <h3>Software Developer</h3>
+                </div>
+            </div>
+        </div>
         <div class="detail three parallax" parallax-speed="4"><h2>Languages</h2> <div class="line-h-sm"></div> <p>Hungarian <span>(native)</span></p> <p>English <span>(C1)</span></p> </div>
         <div class="detail four parallax" parallax-speed="4"> <h2>Hobbies</h2> <div class="line-h-sm"></div> <p>Video Games</p> <p>3D printing</p> </div>
+    </section>
+
+    <section id="skills">
+        <h1 id="s-title">Skills</h1>
+        <div id="skills-underline" class="horizontal-line"></div>
+        <!--h2>Software skills</h2-->
+        <h2>Programming languages</h2>
+        <div id="skills-container-programming" class="d-flex big-container justify-content-center">
+        </div>
+
+        <h2>JavaScript frameworks</h2>
+        <div id="skills-container-frameworks" class="d-flex big-container justify-content-center">
+        </div>
+
+        <h2>Graphics softwares</h2>
+        <div id="skills-container-graphics" class="d-flex big-container justify-content-center">
+        </div>
+
+        <!--h2>Personal skills</h2>
+        <div id="skills-container-personal" class="container d-flex big-container justify-content-center">
+        </div-->
     </section>
 
     <!-- Scripts -->

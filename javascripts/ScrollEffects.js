@@ -1,5 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
+/*
 function getCenter(element) {
     return {
         centerX: (element.getBoundingClientRect().left + element.offsetWidth / 2),
@@ -7,7 +8,6 @@ function getCenter(element) {
     };
 }
 
-/*
 gsap.to('#canvas',
 { 
     scrollTrigger:
@@ -26,18 +26,64 @@ gsap.to('#canvas',
     y: -0.250 * window.innerHeight
 })/**/
 
-let moveCardByY = getCenter(document.querySelector("#cardsocket")) - getCenter(document.querySelector("#card"));
+//let moveCardByY = getCenter(document.querySelector("#cardsocket")) - getCenter(document.querySelector("#card"));
 
-gsap.to("#card",
+gsap.to("#int-card",
 {
     scrollTrigger:
     {
         trigger: "#details",
         start: "top 80%",
         toggleActions: "play pause resume reverse",
-        scrub: true,
+        //scrub: true,
         ease: "power2"
     },
-    x: moveCardByY,
-    y: -0.9 * window.innerHeight
+    y: -0.7 * window.innerHeight
+})
+gsap.to("#det-card",
+{
+    scrollTrigger:
+    {
+        trigger: "#details",
+        start: "top 80%",
+        toggleActions: "play pause resume reverse",
+        //scrub: true,
+        ease: "power2"
+    },
+    y: 0
+})
+gsap.to("#det-card",
+{
+    scrollTrigger:
+    {
+        trigger: "#details",
+        start: "top 60%",
+        end: "top 30%",
+        scrub: true,
+    },
+    scale: 1
+
+})
+
+gsap.to("#det-card",
+{
+    scrollTrigger:
+    {
+        trigger: "#details",
+        start: "top 60%",
+        end: "top 10%",
+        scrub: true,
+    },
+    css: { "filter": "drop-shadow(black 0px 0px 0px)" }
+})
+
+gsap.to("#details",
+{
+    scrollTrigger:
+    {
+        trigger: "#details",
+        toggleActions: "play pause resume reverse",
+        start: "top 20%",
+        toggleClass: "colored"
+    }
 })
