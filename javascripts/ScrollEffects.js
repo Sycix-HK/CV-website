@@ -27,19 +27,33 @@ gsap.to('#canvas',
 })/**/
 
 //let moveCardByY = getCenter(document.querySelector("#cardsocket")) - getCenter(document.querySelector("#card"));
-
-gsap.to("#int-card",
-{
-    scrollTrigger:
-    {
-        trigger: "#details",
-        start: "top 80%",
-        toggleActions: "play pause resume reverse",
-        //scrub: true,
-        ease: "power2"
+ScrollTrigger.matchMedia({
+    "(min-aspect-ratio: 854/1050)": () => {
+        gsap.to("#int-card",
+        {
+            scrollTrigger:
+            {
+                trigger: "#details",
+                start: "top 80%",
+                toggleActions: "play pause resume reverse",
+                //scrub: true,
+                ease: "power2"
+            },
+            y: -0.7 * window.innerHeight
+        }),
+        gsap.to('#canvas',
+        {
+            scrollTrigger:
+            {
+                trigger: "#details",
+                start: "top 80%",
+                toggleActions: "play pause resume reverse",
+                ease: "power2"
+            },
+            x: -0.6 * window.innerWidth
+        })
     },
-    y: -0.7 * window.innerHeight
-})
+});
 gsap.to("#det-card",
 {
     scrollTrigger:
@@ -62,7 +76,6 @@ gsap.to("#det-card",
         scrub: true,
     },
     scale: 1
-
 })
 
 gsap.to("#det-card",

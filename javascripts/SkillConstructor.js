@@ -7,7 +7,7 @@ function construct(skillContainer, skillArray)
             <img src="../images/softwares/${skill.imgpath}" alt="">
             <div style="width: 100%;">
                 <div> <h4>${skill.name}</h4> </div>
-                <div id="sc-${skill.name}" class="skill-level d-flex justify-content-around container">
+                <div id="sc-${skill.name}" class="skill-level">
                     ${[...Array(6).keys()].map(key => 
                         `<div class="empty-skill ${skill.level > key ? "filled-skill":"" }"></div>`
                         ).join('')}

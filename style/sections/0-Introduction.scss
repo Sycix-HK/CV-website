@@ -102,7 +102,7 @@
         margin: 17vh 10vw 0 2vw;
     }
 }
-@media screen and (max-aspect-ratio: 1060 / 1120)
+@media screen and (max-aspect-ratio: 1200 / 1120)
 {
     #desc p
     {
@@ -125,7 +125,7 @@
         z-index: 10;
         display: block;
     }
-    #card
+    .card
     {
         display: grid;
         grid-template-areas: 

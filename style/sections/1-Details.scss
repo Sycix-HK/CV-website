@@ -83,27 +83,78 @@ $poweruptime: all 0.5s ease-out;
     }
 }
 
-.colored
+@media screen and (min-width: 1220px) 
 {
-    & h2:not(.cardpiece)
-    {
-        filter: $shadow-md !important;
-        transform: scale(1) !important;
-        color: $lightblue !important;
-        transform: scale(1.1) !important;
+    .colored
+        {
+        & h2:not(.cardpiece)
+        {
+            filter: $shadow-md !important;
+            color: $lightblue !important;
+            transform: scale(1.1) !important;
+        }
+        & .line-h-sm
+        {
+            filter: $shadow-md !important;
+            width: 7vw !important;
+            background-color: $lightblue !important;
+            box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+        }
+        & p
+        {
+            filter: $shadow-md !important;
+            transform: scale(1.1) !important;
+            margin-top: 3vh !important;
+        }
     }
-    & .line-h-sm
+}
+
+@media screen and (max-width: 1550px) {
+    #cardsocket
     {
-        filter: $shadow-md !important;
-        transform: scale(1) !important;
-        width: 7vw !important;
-        background-color: $lightblue !important;
-        box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+        display:none !important;
     }
-    & p
+}
+@media screen and (max-width: 1220px) {
+    #details
     {
-        filter: $shadow-md !important;
-        transform: scale(1.1) !important;
-        margin-top: 3vh !important;
+        height: 100%;
+        display: block;
+        & .detail
+        {
+            margin-top: 2.3vh;
+            margin-bottom: 4vh !important;
+
+            & h2
+            {
+                filter: $shadow-md !important;
+                color: $lightblue !important;
+            }
+            & .line-h-sm
+            {
+                filter: $shadow-md !important;
+                width: 7vw !important;
+                background-color: $lightblue !important;
+                box-shadow: 0 0 50px 50px rgba(127, 208, 255, 0.082);
+            }
+            & p
+            {
+                filter: $shadow-md !important;
+                margin-top: 3vh !important;
+            }
+        }
+    }
+}
+@media screen and (max-width: 450px) {
+    .detail
+    {
+        & h2
+        {
+            font-size: 2.2rem !important;
+        }
+        & p
+        {
+            font-size: 1rem !important;
+        }
     }
 }
