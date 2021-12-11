@@ -11,42 +11,39 @@
     scroll-margin-top: 5vh;
     & #s-title 
     {
-        margin-top: 11vh;
-        display: block;
-        font-size: $title-size;
+        margin-top: 14vh;
+        margin-bottom: 0;
         text-align: center;
+        font-family: $Montserrat;
+        font-size: $title-size;
+        color: $element;
     }
     & h2 
     {
-        font-size: 7vh;
+        font-family: $Ubuntu;
+        font-size: 4rem;
         font-weight: 400;
         text-align: center;
         padding: 2vh 0 2vh 0;
-        margin: 7vh auto 7vh auto;
+        margin: 6vh auto 6vh auto;
         box-shadow: 2vh 2vh 5vh $shadow;
         background: linear-gradient(155deg, $darkblue, $shadow 100.00%);
         color: white //linear-gradient(90deg, $paper, #909090 100%);
     }
-    & h3
-    {
-        font-size: 5vh;
-        font-weight: 450;
-        text-align: center;
-        margin: 7vh auto 7vh auto;
-    }
     & .horizontal-line
     {
         display: block;
-        margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin-top: 0;
+        margin-bottom: 2vh;
         border-top: 0.5vh solid #1b1b1b;
-        width: 0vh;
+        width: 0;
         margin-left:auto; margin-right:auto;
     }
 
     & .skill
     {
-        display: block;
+        display: flex;
+        align-items: center;
         max-width: 45vh;
         min-width: 45vh;
         height: 13vh;
@@ -65,18 +62,28 @@
             transform: scale(1.04) !important;
             filter: $shadow-md;
         }
-    }
-
-    & .skill img
-    {
-        margin-left: 0.3vh;
-        margin-right: 0.9vh;
-        display: inline-block;
-        $size: 10vh;
-        height: $size;
-        width: $size;
-        border-radius: 2vh;
-        filter: $shadow-md;
+        & img
+        {
+            margin-left: 0.3vh;
+            margin-right: 0.9vh;
+            display: inline-block;
+            $size: 10vh;
+            height: $size;
+            width: $size;
+            border-radius: 2vh;
+            filter: $shadow-md;
+        }
+        & h4
+        {
+            color: white;
+            margin-top: 0.7vh;
+            margin-left: 2vh;
+            font-size: 2.7vh;
+            display: block;
+            margin-bottom: 2.2vh;
+            font-family: $Ubuntu;
+            font-weight: 400;
+        }
     }
 
     & .big-container
@@ -84,19 +91,11 @@
         $margin: 20vh;
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-left: $margin;
         margin-right: $margin;
     }
 
-    & .skill h4
-    {
-        color: white;
-        margin-top: 0.7vh;
-        margin-left: 2vh;
-        font-size: 2.7vh;
-        display: block;
-        margin-bottom: 2.2vh;
-    }
     & .skill-level
     {
         display: flex;

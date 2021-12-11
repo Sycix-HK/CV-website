@@ -100,3 +100,16 @@ gsap.to("#details",
         toggleClass: "colored"
     }
 })
+
+gsap.to("#skills-underline",
+{
+    scrollTrigger:
+    {
+        trigger: "#skills-underline",
+        start: "center 94%",
+        end: "center center",
+        scrub: true,
+        ease: "power1"
+    },
+    width: "20vh"
+})

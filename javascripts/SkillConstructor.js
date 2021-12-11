@@ -3,7 +3,7 @@ function construct(skillContainer, skillArray)
 { 
     document.querySelector(skillContainer).innerHTML = skillArray.map(skill =>
         `
-        <skill class="skill container d-flex align-items-center">
+        <skill class="skill">
             <img src="../images/softwares/${skill.imgpath}" alt="">
             <div style="width: 100%;">
                 <div> <h4>${skill.name}</h4> </div>
