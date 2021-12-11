@@ -113,3 +113,16 @@ gsap.to("#skills-underline",
     },
     width: "20vh"
 })
+setTimeout(() => {
+    document.querySelectorAll(".skill").forEach(element => {
+        gsap.to(element,
+            {
+                scrollTrigger:
+                {
+                    trigger: element,
+                    start: "center bottom",
+                    toggleClass: "show",
+                }
+            })
+    });
+}, 1);

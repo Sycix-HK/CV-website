@@ -44,8 +44,8 @@
     {
         display: flex;
         align-items: center;
-        max-width: 45vh;
-        min-width: 45vh;
+        max-width: 500px;
+        min-width: 500px;
         height: 13vh;
         border-radius: 2vh;
         background: linear-gradient(170deg, $darkblue, #1d1d1d 100.00%);
@@ -64,8 +64,8 @@
         }
         & img
         {
-            margin-left: 0.3vh;
-            margin-right: 0.9vh;
+            margin-left: 1.5vh;
+            margin-right: 1vh;
             display: inline-block;
             $size: 10vh;
             height: $size;
@@ -88,7 +88,7 @@
 
     & .big-container
     {
-        $margin: 20vh;
+        $margin: 13vh;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -106,15 +106,15 @@
     }
     & .filled-skill
     {
-        background: linear-gradient(140deg, #2ee0ff, $lightblue 100.00%);
+        background: linear-gradient(140deg, #34e1ff, $lightblue 100.00%);
     }
     & .empty-skill
     {
-        $size: 3.8vh;
+        $size: 3.4vh;
         border-radius: 50%;
         height: $size;
         width: $size;
-        box-shadow: inset 10px 10px 14px rgba(14, 14, 14, 0.712);
+        box-shadow: inset 0.5vh 0.5vh 0.8vh rgba(14, 14, 14, 0.712);
     }
     & .skill-level-s
     {
@@ -126,5 +126,35 @@
         height: 27px;
         width: 27px;
         box-shadow: inset 10px 10px 14px rgba(14, 14, 14, 0.712);
+    }
+}
+@media screen and (max-width: 950px) {
+    #skills h2
+    {
+        font-size: 2.6rem;
+    }
+    #skills .skill
+    {
+        min-width: 50vw;
+        max-width: 50vw;
+    }
+}
+@media screen and (max-width: 720px) {
+    #skills .skill
+    {
+        min-width: 70vw;
+        max-width: 70vw;
+    }
+}
+@media screen and (max-width: 550px) {
+    #skills h2
+    {
+        font-size: 1.8rem;
+    }
+    #skills .empty-skill
+    {
+        $size: 5vw;
+        height: $size;
+        width: $size;
     }
 }

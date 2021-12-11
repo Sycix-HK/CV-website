@@ -3,11 +3,11 @@ const skills = {
         { name: "JavaScript", imgpath: "JavaScript.svg", 
         level: 5    },
         { name: "Java", imgpath: "Java.jpg", 
-        level: 4    },
+        level: 6    },
         { name: "Haskell", imgpath: "Haskell.svg", 
         level: 3    },
         { name: "C# / .NET", imgpath: "Csharp.svg", 
-        level: 6    },
+        level: 5    },
         { name: "C++", imgpath: "Cpp.png", 
         level: 4    },
         { name: "C", imgpath: "C.png", 
@@ -23,15 +23,15 @@ const skills = {
         { name: "HTML", imgpath: "html.png", 
         level: 5    },
         { name: "PHP", imgpath: "php.svg", 
-        level: 3    },
+        level: 4    },
         { name: "Python", imgpath: "python.svg", 
         level: 1    }
     ],
     frameworks: [
         { name: "jQuery", imgpath: "jquery.svg", 
-        level: 3    },
+        level: 2    },
         { name: "ReactJS", imgpath: "react.svg", 
-        level: 2    }
+        level: 1    }
     ],
     graphics: [
         { name: "Photoshop", imgpath: "Photoshop.png", 
