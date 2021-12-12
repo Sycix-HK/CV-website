@@ -1,1 +1,431 @@
-/* No CSS *//*# sourceMappingURL=3-Projects.css.map */
+#section-projects {
+  margin-top: 11vh;
+  scroll-margin-top: 7vh;
+}
+
+#section-projects #p-main {
+  color: #e9e9e9;
+  background: linear-gradient(155deg, #252839, #1b1b1b 100%);
+  height: 100%;
+  /* Projects panel height */
+}
+
+#section-projects #p-main #p-title {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 6vh;
+  padding-top: 5vh;
+  margin-bottom: 0;
+  display: block;
+  font-size: 14vh;
+  text-align: center;
+}
+
+#section-projects #p-main #p-sec p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  display: block;
+  text-align: center;
+}
+
+#section-projects #p-main #p-sec p.last {
+  padding-bottom: 8vh;
+}
+
+#section-projects #p-main .horizontal-line-light {
+  display: block;
+  margin-top: 2vh;
+  margin-bottom: 4vh;
+  border-top: 0.5vh solid #e9e9e9;
+  width: 0vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#section-projects #projects-lg {
+  margin: 4vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#section-projects #projects-lg .project-lg {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vh;
+  border-radius: 2vh;
+  height: 72vh;
+  max-width: 180vh;
+  overflow: hidden;
+  position: relative;
+  -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+          filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+}
+
+#section-projects #projects-lg .project-lg h2 {
+  top: 3vh;
+  left: 3vh;
+  font-size: 13vh;
+  font-weight: 700;
+  position: relative;
+  z-index: 3;
+  -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+          filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+  font-family: "Montserrat", sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+#section-projects #projects-lg .project-lg h2.light {
+  color: white;
+}
+
+#section-projects #projects-lg .project-lg .display-img {
+  width: 200vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -100vh;
+  margin-top: -94vh;
+}
+
+#section-projects #projects-lg .project-lg .cover {
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  z-index: 1;
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  width: 100vh;
+  height: 100vh;
+  -webkit-transform: rotate(120deg) scale(3) translateY(55vh);
+          transform: rotate(120deg) scale(3) translateY(55vh);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+#section-projects #projects-lg .project-lg .p-desc {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  width: 59vh;
+  top: 10vh;
+  left: 3vh;
+  font-size: 2.4vh;
+  font-weight: 600;
+  position: relative;
+  z-index: 4;
+  padding: 1em;
+  border-radius: 2vh;
+  background-color: #ffffff2d;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#section-projects #projects-lg .project-lg .p-desc.light {
+  background-color: #0000002d;
+  color: white;
+}
+
+#section-projects #projects-lg .project-lg .p-desc.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#section-projects #projects-lg .project-lg .p-details {
+  font-family: "Ubuntu", sans-serif;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  position: absolute;
+  z-index: 4;
+  top: 47vh;
+  right: 2vh;
+  padding: 1em;
+  border-radius: 2vh;
+  background-color: #00000065;
+  height: 18vh;
+  width: 30vh;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+  text-align: center;
+  -webkit-transform: scale(0.6);
+          transform: scale(0.6);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#section-projects #projects-lg .project-lg .p-details h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 0.5vh;
+  font-size: 2.6vh;
+  color: white;
+  -webkit-filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b);
+          filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b);
+}
+
+#section-projects #projects-lg .project-lg .p-details .p-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2vh;
+  margin-bottom: 0;
+}
+
+#section-projects #projects-lg .project-lg .p-details .p-icons .icon {
+  height: 10vh;
+  width: 10vh;
+}
+
+#section-projects #projects-lg .project-lg .p-details .p-icons figcaption {
+  color: white;
+  font-size: 1.3vh;
+}
+
+#section-projects #projects-lg .project-lg .p-details.light {
+  background-color: #0000002d;
+  color: white;
+}
+
+#section-projects #projects-lg .project-lg .p-details.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#section-projects #projects-sm {
+  margin-top: 8vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#section-projects #projects-sm h2 {
+  margin-left: 3.2vh;
+  font-weight: 500;
+  font-size: 5vh;
+  -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+          filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+}
+
+#section-projects #projects-sm h3 {
+  margin-left: 3.2vh;
+  margin-top: 3vh;
+  font-weight: 360;
+  font-size: 3vh;
+  -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+          filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+}
+
+#section-projects #projects-sm .p-desc {
+  position: relative;
+  z-index: 1;
+  background-color: #00000049;
+  padding: 1.6vh;
+  padding-bottom: 0.7vh;
+  border-radius: 3vh;
+  width: 30vh;
+  margin-top: 2vh;
+  text-align: left;
+  color: white;
+  margin-left: 3.2vh;
+}
+
+#section-projects #projects-sm .p-desc p {
+  font-size: 2vh;
+  /* project description font size */
+  -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+          filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+}
+
+#section-projects #projects-sm .icons {
+  margin-top: 1vh;
+  margin-left: 3.2vh;
+}
+
+#section-projects #projects-sm .icons img {
+  position: relative;
+  height: 10vh;
+  /* icons height */
+  -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+          filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+}
+
+#section-projects #projects-sm .icons figcaption {
+  font-size: 1.6vh;
+  color: white;
+  -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+          filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
+}
+
+#section-projects #projects-sm .project-sm {
+  border-radius: 3vh;
+  margin: 2vh;
+  min-width: 50vh;
+  max-width: 50vh;
+  height: 50vh;
+  background: linear-gradient(170deg, #252839, #0c0e13 100%);
+  -webkit-filter: drop-shadow(1.1vh 1.1vh 1.3vh #1b1b1b);
+          filter: drop-shadow(1.1vh 1.1vh 1.3vh #1b1b1b);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+#section-projects #projects-sm .project-sm.show {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+#section-projects #projects-sm .project-sm:hover {
+  -webkit-transform: scale(1.03) !important;
+          transform: scale(1.03) !important;
+  -webkit-filter: drop-shadow(1.7vh 1.7vh 3vh #1b1b1b);
+          filter: drop-shadow(1.7vh 1.7vh 3vh #1b1b1b);
+}
+
+#section-projects #projects-sm .project-sm .p-cover-sm img {
+  border-radius: 3vh;
+  position: absolute;
+  width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  #section-projects #p-main #p-title {
+    font-size: 14vw;
+  }
+  #section-projects #p-main #p-sec p {
+    font-size: 1rem !important;
+  }
+}
+
+@media (max-aspect-ratio: 1470 / 1309) {
+  .p-desc p {
+    font-size: 1.7vh;
+  }
+}
+
+@media (max-aspect-ratio: 1350 / 1300) {
+  #projects-lg {
+    margin: 2vh !important;
+  }
+  #projects-lg .project-lg {
+    border-radius: 1.4vh !important;
+    height: 80vh !important;
+  }
+  #projects-lg .project-lg h2 {
+    left: 0vh !important;
+    font-size: 8vw !important;
+    text-align: center !important;
+  }
+  #projects-lg .project-lg .display-img {
+    right: 0 !important;
+    width: 240vh !important;
+    position: absolute;
+    left: 10% !important;
+    top: 50%;
+    margin-left: -240vh !important/1 !important;
+    margin-top: -240vh !important/2 !important;
+  }
+  #projects-lg .project-lg .cover {
+    z-index: 1;
+    position: relative;
+    background: rgba(255, 255, 255, 0.15);
+    width: 100vh;
+    height: 100vh;
+    -webkit-transform: rotate(120deg) scale(3) translateY(57vh);
+            transform: rotate(120deg) scale(3) translateY(57vh);
+    -webkit-backdrop-filter: blur(1.5px) !important;
+            backdrop-filter: blur(1.5px) !important;
+  }
+  #projects-lg .project-lg .p-desc {
+    width: 90% !important;
+    top: 10vh;
+    left: 3vh;
+    right: 3vh !important;
+    font-size: 2.4vh;
+    font-weight: 600;
+    position: relative;
+    z-index: 4;
+    padding: 1em;
+    border-radius: 2vh;
+  }
+  #projects-lg .project-lg .p-desc.light {
+    background-color: #0000006e !important;
+    color: white;
+  }
+  #projects-lg .project-lg .p-details {
+    top: 58vh !important;
+    left: 3vh;
+    background-color: #00000065;
+    height: 20vh;
+    width: 30vh;
+    -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+    text-align: center;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  #projects-lg .project-lg .p-details h3 {
+    padding-top: 0.5vh;
+    font-size: 2.6vh;
+    color: white;
+    -webkit-filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b);
+            filter: drop-shadow(0.9vh 0.6vh 0.6vh #1b1b1b);
+  }
+  #projects-lg .project-lg .p-details .p-icons {
+    margin: 2vh;
+  }
+  #projects-lg .project-lg .p-details .p-icons .icon {
+    height: 10vh;
+    width: 10vh;
+  }
+  #projects-lg .project-lg .p-details .p-icons figcaption {
+    color: white;
+    font-size: 1.3vh;
+  }
+  #projects-lg .project-lg .p-details.light {
+    background-color: #0000002d;
+    color: white;
+  }
+  #projects-lg .project-lg .p-details.show {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@media (max-aspect-ratio: 870 / 1297) {
+  .cover {
+    -webkit-transform: rotate(120deg) scale(3) translateY(65vh) !important;
+            transform: rotate(120deg) scale(3) translateY(65vh) !important;
+  }
+  #p-sec p {
+    font-size: 1.7vh !important;
+  }
+  #p-main {
+    height: 46vh !important;
+  }
+  #p-title {
+    margin-top: 3vh !important;
+  }
+}
+
+@media (max-aspect-ratio: 690 / 1297) {
+  .project-sm {
+    border-radius: 3vh;
+    margin: 2vh;
+    min-width: 40vh !important;
+    max-width: 40vh !important;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    height: 40vh !important;
+  }
+  .icons {
+    display: none !important;
+  }
+}
+/*# sourceMappingURL=3-Projects.css.map */

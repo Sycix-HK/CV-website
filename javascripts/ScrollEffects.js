@@ -126,3 +126,57 @@ setTimeout(() => {
             })
     });
 }, 1);
+
+gsap.to("#projects-underline",
+{
+    scrollTrigger:
+    {
+        trigger: "#projects-underline",
+        start: "center 96%",
+        end: "center center",
+        scrub: true,
+        ease: "power1"
+    },
+    width: "26vh"
+})
+
+setTimeout(() => {
+    document.querySelectorAll(".p-desc").forEach(element => {
+        gsap.to(element,
+            {
+                scrollTrigger:
+                {
+                    trigger: element,
+                    start: "center 94%",
+                    toggleClass: "show",
+                }
+            })
+    });
+}, 1);
+setTimeout(() => {
+    document.querySelectorAll(".p-details").forEach(element => {
+        gsap.to(element,
+            {
+                scrollTrigger:
+                {
+                    trigger: element,
+                    start: "center 90%",
+                    toggleClass: "show",
+                }
+            })
+    });
+}, 1);
+
+setTimeout(() => {
+    document.querySelectorAll(".project-sm ").forEach(element => {
+        gsap.to(element,
+            {
+                scrollTrigger:
+                {
+                    trigger: element,
+                    start: "top bottom",
+                    toggleClass: "show",
+                }
+            })
+    });
+}, 1);
