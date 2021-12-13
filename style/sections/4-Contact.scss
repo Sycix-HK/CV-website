@@ -74,6 +74,7 @@
         }
         & p 
         {
+            font-family: $Ubuntu;
             transform: scale(1);
             transition: 0.2s;
             flex-basis: 100%;

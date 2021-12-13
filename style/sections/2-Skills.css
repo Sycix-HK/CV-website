@@ -5,7 +5,7 @@
 
 #skills {
   overflow: hidden !important;
-  scroll-margin-top: 5vh;
+  scroll-margin-top: 5vh !important;
 }
 
 #skills #s-title {
