@@ -1,1 +1,201 @@
 @import "../main/global.scss";
+
+.divider-wave {
+    margin-top: 4vh;
+    margin-bottom: -30px;
+    width: 100%;
+}
+#contact 
+{
+    background: linear-gradient(0deg, #22262a,#01070e 90.00%);
+    height: 120vh;
+    display: flex;
+    justify-content:center;
+
+    & #c-container
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        transition: all 0.7s;
+        //transition: opacity 1.2s;
+        padding: 3vh;
+        margin: auto;
+        width: 50%;
+        flex-wrap: wrap;
+        & #c-title
+        {
+            font-family: $Montserrat;
+            flex-basis: 100%;
+            margin-top: 1vh;
+            margin-bottom: 5vh;
+            display: block;
+            font-size: 8vh;
+            font-weight: 600;
+            text-align: center;
+            color: $paper;
+        }
+        & input
+        {
+            font-family: $Ubuntu;
+            transition: 0.4s;
+            //box-shadow: $shadow-in;
+            margin-bottom: 1.6vh;
+            background: $darkblue; //linear-gradient(50deg, $darkblue 70%, $blue, purple);
+            color: $lightblue;
+            border-radius: 1.2vh;
+            height: 6vh;
+            width: 100%;
+            font-weight: 500;
+            font-size: 2.6vh;
+            padding-left: 2vh;
+            padding-right: 2vh;
+            border: none;
+            &:focus
+            {
+                outline: 0.2vh solid $lightblue;
+                //transform: scale(1.015);
+            }
+            &.halved
+            {
+                flex-basis: 43%;
+                margin-left: 0.1%;
+                margin-right: 0.1%;
+
+            }
+            &.full
+            {
+                flex-basis: 99%;
+            }
+            &.invalid
+            {
+                outline: 0.2vh solid rgb(122, 26, 26) !important;
+            }
+        }
+        & p 
+        {
+            transform: scale(1);
+            transition: 0.2s;
+            flex-basis: 100%;
+            text-align: center;
+            color: rgb(200, 28, 28);
+            font-size: 1.8vh;
+            font-weight: 700;
+            &.halved
+            {
+                flex-basis: 46%;
+                margin-left: 0.2vh;
+                margin-right: 0.2vh;
+            }
+            &.full
+            {
+                flex-basis: 98%;
+            }
+            &.hidden
+            {
+                transform: scale(0)
+            }
+        }
+        &.sending
+        {
+            border: 3px solid $lightblue;
+            //backdrop-filter: saturate(2);
+            border-radius: 3vh;
+            transform: translateX(100vw);
+            //opacity: 0;
+            pointer-events: none;
+        }
+    }
+    #in-message
+    {
+        font-family: $Ubuntu;
+        //box-shadow: $shadow-in;
+        height: 30vh;
+        flex-basis: 100%;
+        background-color: $darkblue;
+        color: rgb(159, 229, 246);
+        border-radius: 1.2vh;
+        width: 100%;
+        font-weight: 500;
+        font-size: 2.7vh;
+        padding: 2.3vh;
+        border: none;
+        resize: none;
+        &:focus
+        {
+            outline: 0.2vh solid $lightblue;
+            //transform: scale(1.015);
+        }
+        &.invalid
+        {
+            outline: 0.2vh solid rgb(122, 26, 26) !important;
+        }
+        &::-webkit-scrollbar 
+        {
+            width: 0.9vh;
+            background-color: transparent; 
+        }
+        &::-webkit-scrollbar-thumb
+        {
+            border-radius: 0.5vh;
+            background-color: $lightblue; 
+            &:active
+            {
+                background-color: $blue;
+            }
+        }
+        &::-webkit-scrollbar-button
+        {
+            background-color: transparent;
+        }
+    }
+    & #sent-confirmation
+    {
+        font-family: $Montserrat;
+        transition-delay: 0.6s;
+        transition: all 0.8s;
+        padding-top: 36vh;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        font-size: 9vh;
+        font-weight: 600;
+        color: $paper;
+        opacity: 0;
+        pointer-events: none;
+        transform: scale(0.9);
+        &.show
+        {
+            pointer-events: auto;
+            padding-top: 41vh;
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-aspect-ratio: 1510/1300)
+{
+    .halved
+    {
+        flex-basis: 98% !important;
+        margin-left: 0vh !important;
+        margin-right: 0vh !important;
+    }
+}
+
+@media (max-aspect-ratio: 1330/1300)
+{
+    & #c-title
+    {
+        margin-top: 0.8vh !important;
+        margin-bottom: 4vh !important;
+        font-size: 6vw !important;
+    }
+    #c-container
+    {
+        width: 80% !important;
+    }
+}

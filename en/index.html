@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="../style/main/header.css">
     <link rel="stylesheet" href="../style/main/gradient.css">
     <link rel="stylesheet" href="../style/main/button.css">
-    <link rel="stylesheet" href="../style/main/input-Chisato.css">
 
     <link rel="stylesheet" href="../style/sections/0-Introduction.css">
     <link rel="stylesheet" href="../style/sections/1-Details.css">
@@ -345,6 +344,34 @@
 
     </section>
 
+    <img class="divider-wave" src="../images/waves/stackedWave4.svg" alt="">
+    <section id="contact" class="d-flex">
+        <div id="sent-confirmation">Message sent.</div>
+        <div id="c-container" class="container d-flex justify-content-around align-items-center">
+            <h1 id="c-title">Get in touch</h1>
+            <p id="err-d-name" class="halved hidden"></p>
+            <p id="err-d-email" class="halved hidden"></p>
+            <input id="in-name" class="halved" type="text" name="name" maxlength="35" placeholder="Name" autocomplete="off" spellcheck="false">
+            <input id="in-email" class="halved" type="text" name="email" maxlength="45" placeholder="E-mail" autocomplete="off" spellcheck="false">
+            <p id="err-d-subject" class="full hidden"></p>
+            <input id="in-subject" class="full" type="text" name="subject" maxlength="45" placeholder="Subject" autocomplete="off" spellcheck="true">
+            <p id="err-d-message" class="full hidden"></p>
+            <textarea id="in-message" class="full" type="text" name="message" maxlength="1200" placeholder="Message" autocomplete="off" spellcheck="true"required></textarea>
+            <p id="err-d-send" class="full hidden"></p>
+            <div class="btn btn-arrow-slide"> <button onclick="sendMail()" class="btn-arrow-slide-cont btn-arrow-slide-cont--blue"> <span class="btn-arrow-slide-circle" aria-hidden="true"> <span class="btn-arrow-slide-arrow btn-arrow-slide-icon"></span> </span> <span class="btn-arrow-slide-text"> Send </span> </button> </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <p id="copyright">&copy 2021 by Hoffmann Kristóf</p>
+        <div id="footer-icons">
+            <div id="f-email"   class="icon-tray">  <a><img src="../images/footer icons/envelope-fill.svg" alt="">  <br>  <p>hoffmann.kristof00@gmail.com</p></a></div>
+            <div id="f-phone"   class="icon-tray">  <a><img src="../images/footer icons/telephone-fill.svg" alt=""> <br>  <p>+36 30 232 7022</p></a></div>
+            <div id="f-github"  class="icon-tray"><a href="https://github.com/Sycix-HK" target="_blank">  <img src="../images/footer icons/github.svg" alt="">         <br>  <p>Sycix-HK</p></a></div>
+            <div id="f-discord" class="icon-tray">  <a><img src="../images/footer icons/discord.svg" alt="">        <br>  <p>Sycix#4674</p></a></div>
+        </div>
+    </section>
+
     <!-- Scripts -->
 
         <!-- Gradient -->
@@ -359,8 +386,8 @@
             <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
         <!-- Local -->
-        <!--script src="../javascripts/ContactForm.js"></script>
-        <script src="../javascripts/Footer.js"></script-->
+            <script src="../javascripts/Footer.js"></script>
+            <script src="../javascripts/ContactForm.js"></script>
             <script src="../javascripts/SkillData.js"></script>
             <script src="../javascripts/SkillConstructor.js"></script>
             <script src="../javascripts/ScrollEffects.js"></script>

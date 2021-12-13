@@ -1,1 +1,215 @@
-/* No CSS *//*# sourceMappingURL=4-Contact.css.map */
+.divider-wave {
+  margin-top: 4vh;
+  margin-bottom: -30px;
+  width: 100%;
+}
+
+#contact {
+  background: -webkit-gradient(linear, left bottom, left top, from(#22262a), color-stop(90%, #01070e));
+  background: linear-gradient(0deg, #22262a, #01070e 90%);
+  height: 120vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact #c-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  padding: 3vh;
+  margin: auto;
+  width: 50%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#contact #c-container #c-title {
+  font-family: "Montserrat", sans-serif;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+  display: block;
+  font-size: 8vh;
+  font-weight: 600;
+  text-align: center;
+  color: #B5B5B7;
+}
+
+#contact #c-container input {
+  font-family: "Ubuntu", sans-serif;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  margin-bottom: 1.6vh;
+  background: #252839;
+  color: #0397D6;
+  border-radius: 1.2vh;
+  height: 6vh;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2.6vh;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  border: none;
+}
+
+#contact #c-container input:focus {
+  outline: 0.2vh solid #0397D6;
+}
+
+#contact #c-container input.halved {
+  -ms-flex-preferred-size: 43%;
+      flex-basis: 43%;
+  margin-left: 0.1%;
+  margin-right: 0.1%;
+}
+
+#contact #c-container input.full {
+  -ms-flex-preferred-size: 99%;
+      flex-basis: 99%;
+}
+
+#contact #c-container input.invalid {
+  outline: 0.2vh solid #7a1a1a !important;
+}
+
+#contact #c-container p {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center;
+  color: #c81c1c;
+  font-size: 1.8vh;
+  font-weight: 700;
+}
+
+#contact #c-container p.halved {
+  -ms-flex-preferred-size: 46%;
+      flex-basis: 46%;
+  margin-left: 0.2vh;
+  margin-right: 0.2vh;
+}
+
+#contact #c-container p.full {
+  -ms-flex-preferred-size: 98%;
+      flex-basis: 98%;
+}
+
+#contact #c-container p.hidden {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+#contact #c-container.sending {
+  border: 3px solid #0397D6;
+  border-radius: 3vh;
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  pointer-events: none;
+}
+
+#contact #in-message {
+  font-family: "Ubuntu", sans-serif;
+  height: 30vh;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #252839;
+  color: #9fe5f6;
+  border-radius: 1.2vh;
+  width: 100%;
+  font-weight: 500;
+  font-size: 2.7vh;
+  padding: 2.3vh;
+  border: none;
+  resize: none;
+}
+
+#contact #in-message:focus {
+  outline: 0.2vh solid #0397D6;
+}
+
+#contact #in-message.invalid {
+  outline: 0.2vh solid #7a1a1a !important;
+}
+
+#contact #in-message::-webkit-scrollbar {
+  width: 0.9vh;
+  background-color: transparent;
+}
+
+#contact #in-message::-webkit-scrollbar-thumb {
+  border-radius: 0.5vh;
+  background-color: #0397D6;
+}
+
+#contact #in-message::-webkit-scrollbar-thumb:active {
+  background-color: #00457C;
+}
+
+#contact #in-message::-webkit-scrollbar-button {
+  background-color: transparent;
+}
+
+#contact #sent-confirmation {
+  font-family: "Montserrat", sans-serif;
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  padding-top: 36vh;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 9vh;
+  font-weight: 600;
+  color: #B5B5B7;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#contact #sent-confirmation.show {
+  pointer-events: auto;
+  padding-top: 41vh;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+}
+
+@media (max-aspect-ratio: 1510 / 1300) {
+  .halved {
+    -ms-flex-preferred-size: 98% !important;
+        flex-basis: 98% !important;
+    margin-left: 0vh !important;
+    margin-right: 0vh !important;
+  }
+}
+
+@media (max-aspect-ratio: 1330 / 1300) {
+  #c-title {
+    margin-top: 0.8vh !important;
+    margin-bottom: 4vh !important;
+    font-size: 6vw !important;
+  }
+  #c-container {
+    width: 80% !important;
+  }
+}
+/*# sourceMappingURL=4-Contact.css.map */
