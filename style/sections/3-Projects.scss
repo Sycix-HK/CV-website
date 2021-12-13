@@ -200,10 +200,17 @@
     {
         $mleft: 3.2vh;
         $local-text-shadow: drop-shadow(0.7vh 0.7vh 1vh #000000);
+        
         margin-top: 8vh;
+
+        display: flex;
+        justify-content: center;
         flex-wrap: wrap;
+
         & h2
         {
+            margin: 0;
+            font-family: $Montserrat;
             margin-left: $mleft;
             font-weight: 500;
             font-size: 5vh;
@@ -211,6 +218,7 @@
         }
         & h3
         {
+            font-family: $Ubuntu;
             margin-left: $mleft;
             margin-top: 3vh;
             font-weight: 360;
@@ -230,27 +238,34 @@
             text-align: left;
             color: white;
             margin-left: $mleft;
-        }
-        & .p-desc p {
-            font-size: 2vh; /* project description font size */
-            filter: $local-text-shadow;
+            & p
+            {
+                margin: 1vh;
+                padding: 1vh;
+                font-family: $Ubuntu;
+                font-size: 2vh; /* project description font size */
+                filter: $local-text-shadow;
+            }
         }
         & .icons
         {
+            display: flex;
             margin-top: 1vh;
             margin-left: $mleft;
-        }
-        & .icons img
-        {
-            position: relative;
-            height: 10vh; /* icons height */
-            filter: $local-text-shadow;
-        }
-        & .icons figcaption
-        {
-            font-size: 1.6vh;
-            color:white;
-            filter: $local-text-shadow;
+            & img
+            {
+                position: relative;
+                height: 10vh; /* icons height */
+                filter: $local-text-shadow;
+            }
+            & figcaption
+            {
+                font-family: $Ubuntu;
+                text-align: center;
+                font-size: 1.6vh;
+                color:white;
+                filter: $local-text-shadow;
+            }
         }
         & .project-sm 
         {
@@ -345,7 +360,7 @@
 
             & .p-desc
             {
-                width: 90% !important;
+                width: 80% !important;
                 top: 10vh;
                 left: 3vh;
                 right: 3vh !important;
@@ -366,7 +381,7 @@
 
             & .p-details
             {
-                top: 58vh !important;
+                top: 50vh !important;
                 left: 3vh;
                 background-color: #00000065;
                 height: 20vh;

@@ -197,11 +197,19 @@
 
 #section-projects #projects-sm {
   margin-top: 8vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
 #section-projects #projects-sm h2 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
   margin-left: 3.2vh;
   font-weight: 500;
   font-size: 5vh;
@@ -210,6 +218,7 @@
 }
 
 #section-projects #projects-sm h3 {
+  font-family: "Ubuntu", sans-serif;
   margin-left: 3.2vh;
   margin-top: 3vh;
   font-weight: 360;
@@ -233,6 +242,9 @@
 }
 
 #section-projects #projects-sm .p-desc p {
+  margin: 1vh;
+  padding: 1vh;
+  font-family: "Ubuntu", sans-serif;
   font-size: 2vh;
   /* project description font size */
   -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
@@ -240,6 +252,9 @@
 }
 
 #section-projects #projects-sm .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 1vh;
   margin-left: 3.2vh;
 }
@@ -253,6 +268,8 @@
 }
 
 #section-projects #projects-sm .icons figcaption {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
   font-size: 1.6vh;
   color: white;
   -webkit-filter: drop-shadow(0.7vh 0.7vh 1vh #000000);
@@ -341,7 +358,7 @@
             backdrop-filter: blur(1.5px) !important;
   }
   #projects-lg .project-lg .p-desc {
-    width: 90% !important;
+    width: 80% !important;
     top: 10vh;
     left: 3vh;
     right: 3vh !important;
@@ -357,7 +374,7 @@
     color: white;
   }
   #projects-lg .project-lg .p-details {
-    top: 58vh !important;
+    top: 50vh !important;
     left: 3vh;
     background-color: #00000065;
     height: 20vh;
