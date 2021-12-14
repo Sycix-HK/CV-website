@@ -180,3 +180,49 @@ setTimeout(() => {
             })
     });
 }, 1);
+
+const navSections = [
+    document.getElementById("n-introduction"),
+    document.getElementById("n-details"),
+    document.getElementById("n-skills"),
+    document.getElementById("n-projects"),
+    document.getElementById("n-contact")
+]
+function navSetBold(i) {
+    navSections.map((section) => section.classList.remove("selected"))
+    navSections[i].classList.add("selected")
+}
+function darkenScrollbar(bool) {
+    document.body.style.scrollbarFaceColor = bool ? '#252839' : '#0397D6';
+}
+
+ScrollTrigger.create({
+    trigger: "#introduction",
+    start: "top bottom",
+    onEnter: () => { navSetBold(0) },
+
+})
+ScrollTrigger.create({
+    trigger: "#details",
+    start: "top center",
+    onEnter: () => { navSetBold(1) },
+    onLeaveBack: () => { navSetBold(0) },
+})
+ScrollTrigger.create({
+    trigger: "#skills",
+    start: "top center",
+    onEnter: () => { navSetBold(2) },
+    onLeaveBack: () => { navSetBold(1) },
+})
+ScrollTrigger.create({
+    trigger: "#section-projects",
+    start: "top center",
+    onEnter: () => { navSetBold(3) },
+    onLeaveBack: () => { navSetBold(2) },
+})
+ScrollTrigger.create({
+    trigger: "#contact",
+    start: "top center",
+    onEnter: () => { navSetBold(4) },
+    onLeaveBack: () => { navSetBold(3) },
+})

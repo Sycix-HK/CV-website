@@ -237,6 +237,9 @@
   #footer {
     display: none;
   }
+  #h-copy {
+    display: block;
+  }
   #contact-info {
     margin-bottom: 0px;
   }
