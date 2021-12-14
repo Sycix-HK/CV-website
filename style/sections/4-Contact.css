@@ -7,13 +7,8 @@
 #contact {
   background: -webkit-gradient(linear, left bottom, left top, from(#22262a), color-stop(90%, #01070e));
   background: linear-gradient(0deg, #22262a, #01070e 90%);
-  height: 120vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  height: 100%;
+  padding-bottom: 5vh;
 }
 
 #contact #c-container {
@@ -38,10 +33,10 @@
   font-family: "Montserrat", sans-serif;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-top: 1vh;
+  margin-top: 7vh;
   margin-bottom: 5vh;
   display: block;
-  font-size: 8vh;
+  font-size: 11vh;
   font-weight: 600;
   text-align: center;
   color: #B5B5B7;
@@ -192,6 +187,68 @@
   -webkit-transform: scale(1);
           transform: scale(1);
   opacity: 1;
+}
+
+#contact-info {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  background-color: rgba(10, 7, 7, 0.274);
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  padding: 6px;
+  border-radius: 16px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  color: #fff;
+}
+
+#contact-info img {
+  width: 20px;
+  margin-right: 15px;
+}
+
+#contact-info a {
+  color: #fff;
+}
+
+#contact-info {
+  display: none;
+}
+
+#c-phone, #c-github, #c-discord {
+  display: none;
+}
+
+@media screen and (max-width: 970px) {
+  #f-email {
+    display: none;
+  }
+  #contact-info {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  #footer {
+    display: none;
+  }
+  #contact-info {
+    margin-bottom: 0px;
+  }
+  #c-phone, #c-github, #c-discord {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  #contact-info {
+    font-size: 4.5vw;
+  }
 }
 
 @media (max-aspect-ratio: 1510 / 1300) {
