@@ -82,6 +82,7 @@ nav
     }
     & a
     {
+        transition: 0.2s ease-in;
         font-family: 'Ubuntu', sans-serif;
         color: $light;
         text-decoration: none;
@@ -251,4 +252,20 @@ nav
 .toggle .line3
 {
     transform: rotate(45deg) translate(-5px,-5px);
+}
+@media screen and (min-width:768px) {
+    nav
+    { 
+        height: 100px;
+        transition: 0.3s ease-out;
+    }
+    .nav-collapse:not(:hover)
+    {
+        background-color: #22262ad2;
+        backdrop-filter: blur(4px);
+    }
+    .nav-collapse
+    {
+        height: 60px;
+    }
 }

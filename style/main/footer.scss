@@ -16,11 +16,17 @@
     width: 100%;
     bottom: 0;
 
-    transform: translateY(36px);
     transition: all 0.3s ease-out;
+    &.nav-collapse
+    {
+        transform: translateY(36px);
+        background-color: #22262ad2;
+        backdrop-filter: blur(4px);
+    }
     &:hover
     {
         transform: translateY(0px);
+        background-color: $element !important;
     }
     & #copyright
     {

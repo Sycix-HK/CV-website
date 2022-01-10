@@ -1,32 +1,21 @@
 gsap.registerPlugin(ScrollTrigger);
 
-/*
-function getCenter(element) {
-    return {
-        centerX: (element.getBoundingClientRect().left + element.offsetWidth / 2),
-        centerY: (element.getBoundingClientRect().top + element.offsetHeight / 2)
-    };
-}
-
-gsap.to('#canvas',
-{ 
-    scrollTrigger:
+const navbar = document.getElementById('navbar');
+const footer = document.getElementById('footer');
+document.addEventListener('scroll', () =>
+{
+    if (window.scrollY > 20)
     {
-        trigger: "#desc",
-        start: "top 30%",
-        endTrigger: "#details",
-        end: "top 30%",
-        scrub: true,
-        ease: "power1",
-        markers: true,
-        invalidateOnRefresh: true
-    },
-    rotation: 0,
-    scale: 3,
-    y: -0.250 * window.innerHeight
-})/**/
+        navbar.classList.add('nav-collapse');
+        footer.classList.add('nav-collapse');
+    }
+    else
+    {
+        navbar.classList.remove('nav-collapse');
+        footer.classList.remove('nav-collapse');
+    }
+})
 
-//let moveCardByY = getCenter(document.querySelector("#cardsocket")) - getCenter(document.querySelector("#card"));
 ScrollTrigger.matchMedia({
     "(min-aspect-ratio: 854/1050)": () => {
         gsap.to("#int-card",
