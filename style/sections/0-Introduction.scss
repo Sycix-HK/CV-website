@@ -212,7 +212,6 @@ $duration: 550ms;
     }
     #int-card
     {
-        animation: appear-card $duration ease-out calc-delay(0);
         & img
         {
             animation: appear-cardpart $duration ease-out calc-delay(6) backwards;

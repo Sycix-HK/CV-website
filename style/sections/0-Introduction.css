@@ -214,10 +214,6 @@
     -webkit-animation: appear-header 550ms ease-out 60ms backwards;
             animation: appear-header 550ms ease-out 60ms backwards;
   }
-  #int-card {
-    -webkit-animation: appear-card 550ms ease-out 10ms;
-            animation: appear-card 550ms ease-out 10ms;
-  }
   #int-card img {
     -webkit-animation: appear-cardpart 550ms ease-out 310ms backwards;
             animation: appear-cardpart 550ms ease-out 310ms backwards;
