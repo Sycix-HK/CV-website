@@ -193,3 +193,115 @@
         }
     }
 }
+
+// start animation
+$origindelay: 10ms;
+$delay: 50ms;
+$duration: 550ms;
+@function calc-delay($i)
+{
+    @return $origindelay + ($delay * $i);
+}
+
+// header - card - bg - img - name - line - dev - footer - p - title
+
+@media screen and (min-aspect-ratio: 854/1050){
+    #navbar
+    {
+        animation: appear-header $duration ease-out calc-delay(1) backwards;
+    }
+    #int-card
+    {
+        animation: appear-card $duration ease-out calc-delay(0);
+        & img
+        {
+            animation: appear-cardpart $duration ease-out calc-delay(6) backwards;
+        }
+        & h2
+        {
+            animation: appear-cardpart $duration ease-out calc-delay(7) backwards;
+        }
+        & .horizontal-line
+        {
+            animation: appear-cardpart $duration ease-out calc-delay(8) backwards;
+        }
+        & h3
+        {
+            animation: appear-cardpart $duration ease-out calc-delay(9) backwards;
+        }
+    }
+    #footer
+    {
+        animation: appear-footer $duration ease-out calc-delay(10) backwards;
+    }
+    #desc
+    {
+        & :nth-child(1)
+        {
+            animation: appear-p $duration ease-out calc-delay(11 + 4) backwards;
+        }
+        & :nth-child(2)
+        {
+            animation: appear-p $duration ease-out calc-delay(11 + 3) backwards;
+        }
+        & :nth-child(3)
+        {
+            animation: appear-p $duration ease-out calc-delay(11 + 2) backwards;
+        }
+        & :nth-child(4)
+        {
+            animation: appear-p $duration ease-out calc-delay(11 + 1) backwards;
+        }
+    }
+    #hello
+    {
+        animation: appear-title $duration ease-out calc-delay(17) backwards;
+    }
+
+}
+
+
+@keyframes appear-header
+{
+    0%
+    {
+        height: 0px;
+    }
+}
+@keyframes appear-card {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(-20vh);
+    }
+}
+@keyframes appear-cardpart {
+    0%
+    {
+        filter: $shadow-lg;
+        transform: scale(2);
+        opacity: 0;
+    }
+} 
+@keyframes appear-footer {
+    0%
+    {
+        height: 0px;
+    }
+} 
+@keyframes appear-p {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(10vh);
+    }
+} 
+@keyframes appear-title {
+    0%
+    {
+        filter: $shadow-lg;
+        opacity: 0;
+        transform: scale(2) translateY(1vh);
+    }
+} 
+// header - card - bg - img - name - line - dev - footer - p - title

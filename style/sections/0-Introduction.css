@@ -208,4 +208,151 @@
     font-size: 2.3vh;
   }
 }
+
+@media screen and (min-aspect-ratio: 854 / 1050) {
+  #navbar {
+    -webkit-animation: appear-header 550ms ease-out 60ms backwards;
+            animation: appear-header 550ms ease-out 60ms backwards;
+  }
+  #int-card {
+    -webkit-animation: appear-card 550ms ease-out 10ms;
+            animation: appear-card 550ms ease-out 10ms;
+  }
+  #int-card img {
+    -webkit-animation: appear-cardpart 550ms ease-out 310ms backwards;
+            animation: appear-cardpart 550ms ease-out 310ms backwards;
+  }
+  #int-card h2 {
+    -webkit-animation: appear-cardpart 550ms ease-out 360ms backwards;
+            animation: appear-cardpart 550ms ease-out 360ms backwards;
+  }
+  #int-card .horizontal-line {
+    -webkit-animation: appear-cardpart 550ms ease-out 410ms backwards;
+            animation: appear-cardpart 550ms ease-out 410ms backwards;
+  }
+  #int-card h3 {
+    -webkit-animation: appear-cardpart 550ms ease-out 460ms backwards;
+            animation: appear-cardpart 550ms ease-out 460ms backwards;
+  }
+  #footer {
+    -webkit-animation: appear-footer 550ms ease-out 510ms backwards;
+            animation: appear-footer 550ms ease-out 510ms backwards;
+  }
+  #desc :nth-child(1) {
+    -webkit-animation: appear-p 550ms ease-out 760ms backwards;
+            animation: appear-p 550ms ease-out 760ms backwards;
+  }
+  #desc :nth-child(2) {
+    -webkit-animation: appear-p 550ms ease-out 710ms backwards;
+            animation: appear-p 550ms ease-out 710ms backwards;
+  }
+  #desc :nth-child(3) {
+    -webkit-animation: appear-p 550ms ease-out 660ms backwards;
+            animation: appear-p 550ms ease-out 660ms backwards;
+  }
+  #desc :nth-child(4) {
+    -webkit-animation: appear-p 550ms ease-out 610ms backwards;
+            animation: appear-p 550ms ease-out 610ms backwards;
+  }
+  #hello {
+    -webkit-animation: appear-title 550ms ease-out 860ms backwards;
+            animation: appear-title 550ms ease-out 860ms backwards;
+  }
+}
+
+@-webkit-keyframes appear-header {
+  0% {
+    height: 0px;
+  }
+}
+
+@keyframes appear-header {
+  0% {
+    height: 0px;
+  }
+}
+
+@-webkit-keyframes appear-card {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20vh);
+            transform: translateY(-20vh);
+  }
+}
+
+@keyframes appear-card {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20vh);
+            transform: translateY(-20vh);
+  }
+}
+
+@-webkit-keyframes appear-cardpart {
+  0% {
+    -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+            filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes appear-cardpart {
+  0% {
+    -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+            filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes appear-footer {
+  0% {
+    height: 0px;
+  }
+}
+
+@keyframes appear-footer {
+  0% {
+    height: 0px;
+  }
+}
+
+@-webkit-keyframes appear-p {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+@keyframes appear-p {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+@-webkit-keyframes appear-title {
+  0% {
+    -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+            filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+    opacity: 0;
+    -webkit-transform: scale(2) translateY(1vh);
+            transform: scale(2) translateY(1vh);
+  }
+}
+
+@keyframes appear-title {
+  0% {
+    -webkit-filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+            filter: drop-shadow(1.6vh 1vh 1.3vh #1b1b1b);
+    opacity: 0;
+    -webkit-transform: scale(2) translateY(1vh);
+            transform: scale(2) translateY(1vh);
+  }
+}
 /*# sourceMappingURL=0-Introduction.css.map */
