@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../../style/main/body.css">
+    <link rel="stylesheet" href="../../../style/main/footer.css">
+    <link rel="stylesheet" href="../../../style/main/header.css">
+    <link rel="stylesheet" href="../../../style/main/gradient.css">
+    <link rel="stylesheet" href="../../../style/main/button.css">
+
+    <link rel="stylesheet" href="../../../style/sections/0-Introduction.css">
+    <link rel="stylesheet" href="../../../style/sections/1-Details.css">
+    <link rel="stylesheet" href="../../../style/sections/2-Skills.css">
+    <link rel="stylesheet" href="../../../style/sections/3-Projects.css">
+    <link rel="stylesheet" href="../../../style/sections/4-Contact.css">
+
+    <title>Hoffmann Kristóf Portfolio</title>
+</head>
+<body>
+    <nav id="navbar">
+        <div id="name">
+            <img src="../../../images/Atlox.png" alt="home button" width="40">
+            <h4><span id="h-copy">&copy 2022 / </span>Hoffmann Kristóf <span class="hide-on-xsm">/ Unity programozó</span></h4>
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a id="n-introduction" href="#canvas">Bemutatkozás</a>
+            </li>
+
+            <li class="hideOnCollapse">
+                <a> / </a>
+            </li>
+
+            <li>
+                <a id="n-details" href="#details">Részletek</a>
+            </li>
+
+            <li class="hideOnCollapse">
+                <a> / </a>
+            </li>
+
+            <li>
+                <a id="n-skills" href="#skills">Skillek</a>
+            </li>
+
+            <li class="hideOnCollapse">
+                <a> / </a>
+            </li>
+
+            <li>
+                <a id="n-projects" href="#section-projects">Projektek</a>
+            </li>
+
+            <li class="hideOnCollapse">
+                <a> / </a>
+            </li>
+
+            <li>
+                <a id="n-contact" href="#contact">Kapcsolat</a>
+            </li>
+
+            <li id="last-nav-li">
+                <a href="../en">  <span><img src="../../../images/flags/flag_en.svg" class="flag" alt="">    </span> </a> 
+            </li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <section id="introduction">
+        <canvas id="canvas"></canvas>
+        <div id="introduction-grid">
+            <div id="int-card" class="card">
+                <img src="../../../images/profile.png" alt="profilepicture">
+                <h2><strong>Hoffmann <br> Kristóf</strong></h2>
+                <div class="horizontal-line"></div>
+                <h3>Unity programozó</h3>
+            </div>
+            <h1 id="hello">Hello</h1>
+            <div id="desc">
+                <p>Fiatal és tapasztalt programtervező informatikus vagyok, nagyjából 2 év intenzív Unity Engine és C# tapasztalattal</p>
+                <p>Jó csapatjátékosnak és szakmailag elszántnak vallom magam</p>
+                <p>Szeretem az elképzeléseim a képernyő vásznára vetíteni és igényes részletességgel megvalósítani azokat</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="detail one parallax" parallax-speed="4"  >  <h2>Születés</h2> <div class="line-h-sm"></div> <p>2000. 04. 16</p> <p> <span>Tatabánya</span> </p> </div>
+        <div class="detail two parallax" parallax-speed="4" >  <h2>Tanulmány</h2> <div class="line-h-sm"></div> <p>Eötvös Loránd Tudományegyetem</p> <p><span>Programtervező Informatikus</span></p> <p><span>2020 - jelen</span></p> </div>
+        <div id="cardsocket">
+            <div id="det-card" class="card">                
+                <img src="../../../images/profile.png" alt="profilepicture">
+                <h2 class="cardpiece"><strong>Hoffmann <br> Kristóf</strong></h2>
+                <div class="horizontal-line"></div>
+                <h3>Unity programozó</h3></div>
+        </div>
+        <div class="detail three parallax" parallax-speed="4"><h2>Nyelvek</h2> <div class="line-h-sm"></div> <p>Magyar <span>(anyanyelv)</span></p> <p>Angol <span>(C1)</span></p> </div>
+        <div class="detail four parallax" parallax-speed="4"> <h2>Hobbik</h2> <div class="line-h-sm"></div> <p>Videójáték</p> <p>3D nyomtatás</p> </div>
+    </section>
+
+    <section id="skills">
+        <h1 id="s-title">Skillek</h1>
+        <div id="skills-underline" class="horizontal-line"></div>
+        <h2>Programozási Nyelvek</h2>
+        <div id="skills-container-programming" class="big-container">
+        </div>
+
+        <div style="display: none">
+            <h2>JavaScript keretrendszerek</h2>
+            <div id="skills-container-frameworks" class="big-container">
+            </div>
+
+            <h2>Grafikus szoftverek</h2>
+            <div id="skills-container-graphics" class="big-container">
+        </div></div>
+    </section>
+
+    <section id="section-projects">
+        <div id="p-main" class="p-project">
+            <h1 id="p-title">
+                Projektek
+            </h1>
+            <div id="projects-underline" class="horizontal-line-light"></div>
+            <div id="p-sec">
+                <p>Ezek a különböző projektek amiket az évek alatt csináltam</p>
+                <p>Mindegyiket teljesen egyedül én készitettem az ötlettől a modellezésen keresztül a programozásig</p>
+                <p class="last">Szivesen válaszolok kérdésekre a részleteikről</p>
+            </div>
+        </div>
+
+        <div id="projects-lg">
+            <div class="project-lg">
+                <div style="position: relative;">
+                    <div class="p-details">
+                        <h3 class="p-date">2021 jun - 2021 oct</h3>
+                        <div class="p-icons">
+                            <div>
+                                <img class="icon" src="../../../images/projecticons/finished.png" alt="">
+                                <figcaption> Befejezett </figcaption>
+                            </div>
+                            <div style="margin-left: 25px;">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
+                                <figcaption> Unity/C# </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class="light">Civilization Cube</h2>
+                    <div class="p-desc light">
+                        <p><strong>A Civilization Cube egy egyszemélyes stratégiai játék Androidra ami egy nyersanyaggal töltött rubik kocka irányitására fekteti a hangsúlyt</strong></p>
+                        <p>A kockán egy automatikus ökoszisztéma üzemel ahol a lakosok gazdálkodnak a nyersanyaggal</p>
+                        <p>A játék célja egy űrhajó felépitése a lehető legkevesebb lépésben fejlesztéssel vagy a többi város kifosztásával</p>
+                    </div>
+                    <img class="display-img"src="../../../images/projects/Cube/backgroundR.png" alt="">
+                    <div class="cover"></div>
+                </div>
+            </div>
+
+            <div class="project-lg">
+                <div style="position: relative;">
+                    <div class="p-details">
+                        <h3 class="p-date">2021 apr - 2021 jun</h3>
+                        <div class="p-icons">
+                            <div>
+                                <img class="icon" src="../../../images/projecticons/construction.png" alt="">
+                                <figcaption> Befejezetlen </figcaption>
+                            </div>
+                            <div style="margin-left: 25px;">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
+                                <figcaption> Unity/C# </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>Haunted Waters</h2>
+                    <div class="p-desc">
+                        <p><strong>A Haunted Waters egy szellemhajóval játszható roguelike</strong></p>
+                        <p>A hajó arzenáljához a különböző képességei mellé egy elégethető képesség kártya rendszer ad variációt</p>
+                        <p>A fejlődésre a gyűjtött lelkek boltban való elköltésével lehet szert tenni</p>
+                    </div>
+                    <img class="display-img"src="../../../images\projects\Ship\backgroundN.png" alt="">
+                    <div class="cover"></div>
+                </div>
+            </div>
+
+            <div class="project-lg">
+                <div style="position: relative;">
+                    <div class="p-details">
+                        <h3 class="p-date">2020 dec - 2021 mar</h3>
+                        <div class="p-icons">
+                            <div>
+                                <img class="icon" src="../../../images/projecticons/construction.png" alt="">
+                                <figcaption> Befejezetlen </figcaption>
+                            </div>
+                            <div style="margin-left: 25px;">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
+                                <figcaption> Unity/C# </figcaption>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>The Cardsmith</h2>
+                    <div class="p-desc">
+                        <p><strong>A Cardsmith egy történet alapú belső nézetes kártya "gyűjtő, játszó és készitő" játék</strong></p>
+                        <p>A főszereplő egy kártyakovács, akinek célja hogy elhúnyt legendák emlékeit örökitse meg kártya formájában</p>
+                        <p>A fő szál döntései hatással vannak a kimenetelre, de a játékos akár készithet sima kártyákat is a műhelyében hogy pénzt keressen és fejlessze azt, vagy játszhat is velük a beépitett kártyajátékban</p>
+                    </div>
+                    <img class="display-img"src="../../../images/projects/Cardsmith/background.png" alt="">
+                    <div class="cover"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- small projects -->
+
+        <div >
+            <div id="projects-sm">
+                <div class="project-sm">
+                    <div class="p-cover-sm">
+                        <img src="../../../images/projects/Small/cardsmith.png" alt="">
+                    </div>
+                    <h3 style="color: white">2020 oct - 2020 dec</h3>
+                    <h2 style="color: white">Cardsmith (régi)</h2>
+                    
+                    <div class="icons">
+                        <div>
+                            <img src="../../../images/projecticons/construction.png" alt="">
+                            <figcaption> Befejezetlen </figcaption>
+    
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <img src="../../../images/projecticons/unity.png" alt="">
+                            <figcaption> Unity </figcaption>
+    
+                        </div>
+                    </div>
+                    <div class="p-desc">
+                        <p>A Cardsmith egyedül egy fejleszthető műhelyet tartalmazó régi verziója</p>
+                    </div>
+                </div>
+                <div class="project-sm">
+                    <div class="p-cover-sm">
+                        <img src="../../../images/projects/Small/blob.png" alt="">
+                    </div>
+                    <h3 style="color: white">2020 sep - 2020 oct</h3>
+                    <h2 style="color: white">Blob Vault</h2>
+                    
+                    <div class="icons d-flex">
+                        <div>
+                            <img src="../../../images/projecticons/construction.png" alt="">
+                            <figcaption class="text-center"> Befejezetlen </figcaption>
+    
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <img src="../../../images/projecticons/unity.png" alt="">
+                            <figcaption class="text-center"> Unity </figcaption>
+    
+                        </div>
+                    </div>
+                    <div class="p-desc">
+                        <p>Egy Among Us inspirált multiplayer játék ahol a rablóknak egy bankot kell kifosztani miközben őrnek tettetik magukat</p>
+                    </div>
+                </div>
+                <div class="project-sm">
+                    <div class="p-cover-sm">
+                        <img src="../../../images/projects/Small/balloon.png" alt="">
+                    </div>
+                    <h3 style="color: white">2018</h3>
+                    <h2 style="color: white">Balloon Lift</h2>
+                    
+                    <div class="icons d-flex">
+                        <div>
+                            <img src="../../../images/projecticons/construction.png" alt="">
+                            <figcaption class="text-center"> Befejezetlen </figcaption>
+    
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <img src="../../../images/projecticons/godot.png" alt="">
+                            <figcaption class="text-center">Godot</figcaption>
+    
+                        </div>
+                    </div>
+                    <div class="p-desc">
+                        <p>A Balloon Lift egy egyszerű Android játék ahol egy felfele szálló lufit kell megvédeni</p>
+                    </div>
+                </div>
+                <div class="project-sm">
+                    <div class="p-cover-sm">
+                        <img src="../../../images/projects/Small/spellduel.png" alt="">
+                    </div>
+                    <h3 style="color: white">2018</h3>
+                    <h2 style="color: white">Spellduel</h2>
+                    
+                    <div class="icons d-flex">
+                        <div>
+                            <img src="../../../images/projecticons/construction.png" alt="">
+                            <figcaption class="text-center"> Befejezetlen </figcaption>
+    
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <img src="../../../images/projecticons/godot.png" alt="">
+                            <figcaption class="text-center">Godot</figcaption>
+    
+                        </div>
+                    </div>
+                    <div class="p-desc">
+                        <p>A Spellduel egy helyi 1v1 játék ahol az ellenfél támadásaira kell reagálni és áttörni a védelmén</p>
+                    </div>
+                </div>
+                <div class="project-sm">
+                    <div class="p-cover-sm">
+                        <img src="../../../images/projects/Small/spaceships.png" alt="">
+                    </div>
+                    <h3 style="color: white">2017</h3>
+                    <h2 style="color: white">Atlox Ships</h2>
+                    
+                    <div class="icons d-flex">
+                        <div>
+                            <img src="../../../images/projecticons/finished.png" alt="">
+                            <figcaption class="text-center"> Befejezett </figcaption>
+    
+                        </div>
+                        <div style="margin-left: 25px;">
+                            <img src="../../../images/projecticons/godot.png" alt="">
+                            <figcaption class="text-center">Godot</figcaption>
+    
+                        </div>
+                    </div>
+                    <div class="p-desc">
+                        <p>Egy egyszerű space shooter és az első elkészitett projectem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <img class="divider-wave" src="../../../images/waves/stackedWave4.svg" alt="">
+    <section id="contact">
+        <div id="sent-confirmation">Üzenet elküldve</div>
+        <div id="c-container" class="container d-flex justify-content-around align-items-center">
+            <h1 id="c-title">Lépj kapcsolatba</h1>
+            <p id="err-d-name" class="halved hidden"></p>
+            <p id="err-d-email" class="halved hidden"></p>
+            <input id="in-name" class="halved" type="text" name="name" maxlength="35" placeholder="Név" autocomplete="off" spellcheck="false">
+            <input id="in-email" class="halved" type="text" name="email" maxlength="45" placeholder="E-mail" autocomplete="off" spellcheck="false">
+            <p id="err-d-subject" class="full hidden"></p>
+            <input id="in-subject" class="full" type="text" name="subject" maxlength="45" placeholder="Tárgy" autocomplete="off" spellcheck="true">
+            <p id="err-d-message" class="full hidden"></p>
+            <textarea id="in-message" class="full" type="text" name="message" maxlength="1200" placeholder="Üzenet" autocomplete="off" spellcheck="true"required></textarea>
+            <p id="err-d-send" class="full hidden"></p>
+            <div class="btn btn-arrow-slide"> <button onclick="sendMail()" class="btn-arrow-slide-cont btn-arrow-slide-cont--blue"> <span class="btn-arrow-slide-circle" aria-hidden="true"> <span class="btn-arrow-slide-arrow btn-arrow-slide-icon"></span> </span> <span class="btn-arrow-slide-text"> Küldés </span> </button> </div>
+        </div>
+        <div id="contact-info">
+            <div id="c-email">
+                <p><img src="../../../images/footer icons/envelope-fill.svg" alt="">hoffmann.kristof00@gmail.com</p>
+            </div>
+            <div id="c-phone">
+                <img src="../../../images/footer icons/telephone-fill.svg" alt="">+36 30 232 7022</p>
+            </div>
+            <div id="c-github">
+                <a href="https://github.com/Sycix-HK" target="_blank"><img src="../../../images/footer icons/github.svg" alt="">Sycix-HK</p></a>
+            </div>
+            <div id="c-discord">
+                <p><img src="../../../images/footer icons/discord.svg" alt="">Sycix#4674</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <p id="copyright">&copy 2022 by Hoffmann Kristóf</p>
+        <div id="footer-icons">
+            <div id="f-email"   class="icon-tray">  <a><img src="../../../images/footer icons/envelope-fill.svg" alt="">  <br>  <p>hoffmann.kristof00@gmail.com</p></a></div>
+            <div id="f-phone"   class="icon-tray">  <a><img src="../../../images/footer icons/telephone-fill.svg" alt=""> <br>  <p>+36 30 232 7022</p></a></div>
+            <div id="f-github"  class="icon-tray">  <a href="https://github.com/Sycix-HK" target="_blank">  <img src="../../../images/footer icons/github.svg" alt="">         <br>  <p>Sycix-HK</p></a></div>
+            <div id="f-discord" class="icon-tray">  <a><img src="../../../images/footer icons/discord.svg" alt="">        <br>  <p>Sycix#4674</p></a></div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+
+        <!-- Gradient -->
+            <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+            <script>let gradient = new Gradient(); gradient.initGradient("#canvas"); </script>
+    
+        <!-- GSAP -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
+    
+        <!-- EmailJS -->
+            <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <!-- Local -->
+        <script src="../../../javascripts/Footer.js"></script>
+        <script src="../../../javascripts/ContactForm.js"></script>
+        <script src="../SkillData.js"></script>
+        <script src="../../../javascripts/SkillConstructorFar.js"></script>
+        <script src="../../../javascripts/ScrollEffects.js"></script>
+        <script src="../../../javascripts/Header.js"></script>
+
+</body>
+</html>
