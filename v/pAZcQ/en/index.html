@@ -5,31 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preload" as="image" href="../images/profile.png">
-    <link rel="prefetch" href="../images/profile.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Ubuntu:wght@300;400&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../style/main/body.css">
-    <link rel="stylesheet" href="../style/main/footer.css">
-    <link rel="stylesheet" href="../style/main/header.css">
-    <link rel="stylesheet" href="../style/main/gradient.css">
-    <link rel="stylesheet" href="../style/main/button.css">
+    <link rel="stylesheet" href="../../../style/main/body.css">
+    <link rel="stylesheet" href="../../../style/main/footer.css">
+    <link rel="stylesheet" href="../../../style/main/header.css">
+    <link rel="stylesheet" href="../../../style/main/gradient.css">
+    <link rel="stylesheet" href="../../../style/main/button.css">
 
-    <link rel="stylesheet" href="../style/sections/0-Introduction.css">
-    <link rel="stylesheet" href="../style/sections/1-Details.css">
-    <link rel="stylesheet" href="../style/sections/2-Skills.css">
-    <link rel="stylesheet" href="../style/sections/3-Projects.css">
-    <link rel="stylesheet" href="../style/sections/4-Contact.css">
+    <link rel="stylesheet" href="../../../style/sections/0-Introduction.css">
+    <link rel="stylesheet" href="../../../style/sections/1-Details.css">
+    <link rel="stylesheet" href="../../../style/sections/2-Skills.css">
+    <link rel="stylesheet" href="../../../style/sections/3-Projects.css">
+    <link rel="stylesheet" href="../../../style/sections/4-Contact.css">
 
-    <title>Portfolio</title>
+    <title>Hoffmann Kristóf Portfolio</title>
 </head>
 <body>
     <nav id="navbar">
         <div id="name">
-            <img src="../images/Atlox.png" alt="home button" width="40">
-            <h4><span id="h-copy">&copy 2022 / </span>Hoffmann Kristóf <span class="hide-on-xsm">/ developer</span></h4>
+            <img src="../../../images/Atlox.png" alt="home button" width="40">
+            <h4><span id="h-copy">&copy 2022 / </span>Hoffmann Kristóf <span class="hide-on-xsm">/ Unity Gameplay Programmer</span></h4>
         </div>
         <ul class="nav-links">
             <li>
@@ -64,12 +62,8 @@
                 <a> / </a>
             </li>
 
-            <li>
-                <a id="n-contact" href="#contact">Contact</a>
-            </li>
-
             <li id="last-nav-li">
-                <a href="../hu">  <span><img src="../images/flags/flag_hu.svg" class="flag" alt="">    </span> </a> 
+                <a id="n-contact" href="#contact">Contact</a>
             </li>
             
         </ul>
@@ -84,17 +78,17 @@
         <canvas id="canvas"></canvas>
         <div id="introduction-grid">
             <div id="int-card" class="card">
-                <img src="../images/profile.png" alt="profilepicture">
+                <img src="../../../images/profile.png" alt="profilepicture">
                 <h2><strong>Hoffmann <br> Kristóf</strong></h2>
                 <div class="horizontal-line"></div>
-                <h3>Software Developer</h3>
+                <h3>Unity Gameplay Programmer</h3>
             </div>
             <h1 id="hello">Hello</h1>
             <div id="desc">
                 <p>I'm a young and experienced hungarian computer science student, who has a passion for programming and video games.</p>
-                <p>I learned programming at a very early age and I started working on several projects to improve.</p>
-                <p>I consider myself a a well-rounded team player with a strong ambition to create and paint my mind on the canvas of the screen. I put my heart into my projects and like to add small details to make them feel more immersive.</p>
-                <p>I'm dedicated to continuing my studies and improving my skills in multiple different areas.</p>
+                <p>I was interested in programming at an early age and did not stop learning since</p>
+                <p>I started making games in GameMaker, then moved to Godot and finally settled with Unity Engine</p>
+                <p>I like painting my mind on the canvas of the screen and I like creating quality work with great attention to detail</p>
             </div>
         </div>
     </section>
@@ -104,13 +98,13 @@
         <div class="detail two parallax" parallax-speed="4" >  <h2>Education</h2> <div class="line-h-sm"></div> <p>Eötvös Loránd University</p> <p><span>Computer Science</span></p> <p><span>2020 - current</span></p> </div>
         <div id="cardsocket">
             <div id="det-card" class="card">                
-                <img src="../images/profile.png" alt="profilepicture">
+                <img src="../../../images/profile.png" alt="profilepicture">
                 <h2 class="cardpiece"><strong>Hoffmann <br> Kristóf</strong></h2>
                 <div class="horizontal-line"></div>
-                <h3>Software Developer</h3></div>
+                <h3>Unity Gameplay Programmer</h3></div>
         </div>
         <div class="detail three parallax" parallax-speed="4"><h2>Languages</h2> <div class="line-h-sm"></div> <p>Hungarian <span>(native)</span></p> <p>English <span>(C1)</span></p> </div>
-        <div class="detail four parallax" parallax-speed="4"> <h2>Hobbies</h2> <div class="line-h-sm"></div> <p>Video Games</p> <p>3D printing</p> </div>
+        <div class="detail four parallax" parallax-speed="4"> <h2>Hobbies</h2> <div class="line-h-sm"></div> <p>Video Games</p> <p>3D printing</p> <p>Blender Artworks</p> </div>
     </section>
 
     <section id="skills">
@@ -119,14 +113,14 @@
         <h2>Programming languages</h2>
         <div id="skills-container-programming" class="big-container">
         </div>
-
+        <div style="display: none">
         <h2>JavaScript frameworks</h2>
         <div id="skills-container-frameworks" class="big-container">
         </div>
 
         <h2>Graphics softwares</h2>
         <div id="skills-container-graphics" class="big-container">
-        </div>
+        </div></div>
     </section>
 
     <section id="section-projects">
@@ -149,11 +143,11 @@
                         <h3 class="p-date">2021 jun - 2021 oct</h3>
                         <div class="p-icons">
                             <div>
-                                <img class="icon" src="../images/projecticons/finished.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/finished.png" alt="">
                                 <figcaption> Finished </figcaption>
                             </div>
                             <div style="margin-left: 25px;">
-                                <img class="icon" src="../images/projecticons/unity.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
                                 <figcaption> Unity/C# </figcaption>
                             </div>
                         </div>
@@ -164,7 +158,7 @@
                         <p>The cube has an automatic ecosystem with people interacting with the cube's resources on their own</p>
                         <p>The game's goal is to get a town to build a spacecraft in as few turns as possible by building them or pillaging it from other towns</p>
                     </div>
-                    <img class="display-img"src="../images/projects/Cube/backgroundR.png" alt="">
+                    <img class="display-img"src="../../../images/projects/Cube/backgroundR.png" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
@@ -175,11 +169,11 @@
                         <h3 class="p-date">2021 apr - 2021 jun</h3>
                         <div class="p-icons">
                             <div>
-                                <img class="icon" src="../images/projecticons/construction.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/construction.png" alt="">
                                 <figcaption> Unfinished </figcaption>
                             </div>
                             <div style="margin-left: 25px;">
-                                <img class="icon" src="../images/projecticons/unity.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
                                 <figcaption> Unity/C# </figcaption>
                             </div>
                         </div>
@@ -190,7 +184,7 @@
                         <p>You have different abilities including phase shifting as a dodge mechanic and an expandable playing card system that you can burn to use it's ability</p>
                         <p>You can use your collected souls to upgrade or heal your ship in the shop</p>
                     </div>
-                    <img class="display-img"src="../images\projects\Ship\backgroundN.png" alt="">
+                    <img class="display-img"src="../../../images\projects\Ship\backgroundN.png" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
@@ -201,11 +195,11 @@
                         <h3 class="p-date">2020 dec - 2021 mar</h3>
                         <div class="p-icons">
                             <div>
-                                <img class="icon" src="../images/projecticons/construction.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/construction.png" alt="">
                                 <figcaption> Unfinished </figcaption>
                             </div>
                             <div style="margin-left: 25px;">
-                                <img class="icon" src="../images/projecticons/unity.png" alt="">
+                                <img class="icon" src="../../../images/projecticons/unity.png" alt="">
                                 <figcaption> Unity/C# </figcaption>
                             </div>
                         </div>
@@ -216,7 +210,7 @@
                         <p>In a world where cards have magical abilites, you play as a cardsmith, whose job is to immortalize dead legends in form of cards</p>
                         <p>Choices in main and side quests matter as you make friends and enemies, but you can always choose to just fill orders for your clients to make money and upgrade your workshop</p>
                     </div>
-                    <img class="display-img"src="../images/projects/Cardsmith/background.png" alt="">
+                    <img class="display-img"src="../../../images/projects/Cardsmith/background.png" alt="">
                     <div class="cover"></div>
                 </div>
             </div>
@@ -228,19 +222,19 @@
             <div id="projects-sm">
                 <div class="project-sm">
                     <div class="p-cover-sm">
-                        <img src="../images/projects/Small/cardsmith.png" alt="">
+                        <img src="../../../images/projects/Small/cardsmith.png" alt="">
                     </div>
                     <h3 style="color: white">2020 oct - 2020 dec</h3>
                     <h2 style="color: white">Cardsmith (old)</h2>
                     
                     <div class="icons">
                         <div>
-                            <img src="../images/projecticons/construction.png" alt="">
+                            <img src="../../../images/projecticons/construction.png" alt="">
                             <figcaption> Unfinished </figcaption>
     
                         </div>
                         <div style="margin-left: 25px;">
-                            <img src="../images/projecticons/unity.png" alt="">
+                            <img src="../../../images/projecticons/unity.png" alt="">
                             <figcaption> Unity </figcaption>
     
                         </div>
@@ -251,19 +245,19 @@
                 </div>
                 <div class="project-sm">
                     <div class="p-cover-sm">
-                        <img src="../images/projects/Small/blob.png" alt="">
+                        <img src="../../../images/projects/Small/blob.png" alt="">
                     </div>
                     <h3 style="color: white">2020 sep - 2020 oct</h3>
                     <h2 style="color: white">Blob Vault</h2>
                     
                     <div class="icons d-flex">
                         <div>
-                            <img src="../images/projecticons/construction.png" alt="">
+                            <img src="../../../images/projecticons/construction.png" alt="">
                             <figcaption class="text-center"> Unfinished </figcaption>
     
                         </div>
                         <div style="margin-left: 25px;">
-                            <img src="../images/projecticons/unity.png" alt="">
+                            <img src="../../../images/projecticons/unity.png" alt="">
                             <figcaption class="text-center"> Unity </figcaption>
     
                         </div>
@@ -274,19 +268,19 @@
                 </div>
                 <div class="project-sm">
                     <div class="p-cover-sm">
-                        <img src="../images/projects/Small/balloon.png" alt="">
+                        <img src="../../../images/projects/Small/balloon.png" alt="">
                     </div>
                     <h3 style="color: white">2018</h3>
                     <h2 style="color: white">Balloon Lift</h2>
                     
                     <div class="icons d-flex">
                         <div>
-                            <img src="../images/projecticons/construction.png" alt="">
+                            <img src="../../../images/projecticons/construction.png" alt="">
                             <figcaption class="text-center"> Unfinished </figcaption>
     
                         </div>
                         <div style="margin-left: 25px;">
-                            <img src="../images/projecticons/godot.png" alt="">
+                            <img src="../../../images/projecticons/godot.png" alt="">
                             <figcaption class="text-center">Godot</figcaption>
     
                         </div>
@@ -297,19 +291,19 @@
                 </div>
                 <div class="project-sm">
                     <div class="p-cover-sm">
-                        <img src="../images/projects/Small/spellduel.png" alt="">
+                        <img src="../../../images/projects/Small/spellduel.png" alt="">
                     </div>
                     <h3 style="color: white">2018</h3>
                     <h2 style="color: white">Spellduel</h2>
                     
                     <div class="icons d-flex">
                         <div>
-                            <img src="../images/projecticons/construction.png" alt="">
+                            <img src="../../../images/projecticons/construction.png" alt="">
                             <figcaption class="text-center"> Unfinished </figcaption>
     
                         </div>
                         <div style="margin-left: 25px;">
-                            <img src="../images/projecticons/godot.png" alt="">
+                            <img src="../../../images/projecticons/godot.png" alt="">
                             <figcaption class="text-center">Godot</figcaption>
     
                         </div>
@@ -320,19 +314,19 @@
                 </div>
                 <div class="project-sm">
                     <div class="p-cover-sm">
-                        <img src="../images/projects/Small/spaceships.png" alt="">
+                        <img src="../../../images/projects/Small/spaceships.png" alt="">
                     </div>
                     <h3 style="color: white">2017</h3>
                     <h2 style="color: white">Atlox Ships</h2>
                     
                     <div class="icons d-flex">
                         <div>
-                            <img src="../images/projecticons/finished.png" alt="">
+                            <img src="../../../images/projecticons/finished.png" alt="">
                             <figcaption class="text-center"> Finished </figcaption>
     
                         </div>
                         <div style="margin-left: 25px;">
-                            <img src="../images/projecticons/godot.png" alt="">
+                            <img src="../../../images/projecticons/godot.png" alt="">
                             <figcaption class="text-center">Godot</figcaption>
     
                         </div>
@@ -346,7 +340,7 @@
 
     </section>
 
-    <img class="divider-wave" src="../images/waves/stackedWave4.svg" alt="">
+    <img class="divider-wave" src="../../../images/waves/stackedWave4.svg" alt="">
     <section id="contact">
         <div id="sent-confirmation">Message sent.</div>
         <div id="c-container" class="container d-flex justify-content-around align-items-center">
@@ -364,16 +358,16 @@
         </div>
         <div id="contact-info">
             <div id="c-email">
-                <p><img src="../images/footer icons/envelope-fill.svg" alt="">hoffmann.kristof00@gmail.com</p>
+                <p><img src="../../../images/footer icons/envelope-fill.svg" alt="">hoffmann.kristof00@gmail.com</p>
             </div>
             <div id="c-phone">
-                <img src="../images/footer icons/telephone-fill.svg" alt="">+36 30 232 7022</p>
+                <img src="../../../images/footer icons/telephone-fill.svg" alt="">+36 30 232 7022</p>
             </div>
             <div id="c-github">
-                <a href="https://github.com/Sycix-HK" target="_blank"><img src="../images/footer icons/github.svg" alt="">Sycix-HK</p></a>
+                <a href="https://github.com/Sycix-HK" target="_blank"><img src="../../../images/footer icons/github.svg" alt="">Sycix-HK</p></a>
             </div>
             <div id="c-discord">
-                <p><img src="../images/footer icons/discord.svg" alt="">Sycix#4674</p>
+                <p><img src="../../../images/footer icons/discord.svg" alt="">Sycix#4674</p>
             </div>
         </div>
     </section>
@@ -381,10 +375,10 @@
     <section id="footer">
         <p id="copyright">&copy 2022 by Hoffmann Kristóf</p>
         <div id="footer-icons">
-            <div id="f-email"   class="icon-tray">  <a><img src="../images/footer icons/envelope-fill.svg" alt="">  <br>  <p>hoffmann.kristof00@gmail.com</p></a></div>
-            <div id="f-phone"   class="icon-tray">  <a><img src="../images/footer icons/telephone-fill.svg" alt=""> <br>  <p>+36 30 232 7022</p></a></div>
-            <div id="f-github"  class="icon-tray">  <a href="https://github.com/Sycix-HK" target="_blank">  <img src="../images/footer icons/github.svg" alt="">         <br>  <p>Sycix-HK</p></a></div>
-            <div id="f-discord" class="icon-tray">  <a><img src="../images/footer icons/discord.svg" alt="">        <br>  <p>Sycix#4674</p></a></div>
+            <div id="f-email"   class="icon-tray">  <a><img src="../../../images/footer icons/envelope-fill.svg" alt="">  <br>  <p>hoffmann.kristof00@gmail.com</p></a></div>
+            <div id="f-phone"   class="icon-tray">  <a><img src="../../../images/footer icons/telephone-fill.svg" alt=""> <br>  <p>+36 30 232 7022</p></a></div>
+            <div id="f-github"  class="icon-tray">  <a href="https://github.com/Sycix-HK" target="_blank">  <img src="../../../images/footer icons/github.svg" alt="">         <br>  <p>Sycix-HK</p></a></div>
+            <div id="f-discord" class="icon-tray">  <a><img src="../../../images/footer icons/discord.svg" alt="">        <br>  <p>Sycix#4674</p></a></div>
         </div>
     </section>
 
@@ -402,13 +396,12 @@
             <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
         <!-- Local -->
-            <script src="../javascripts/Footer.js"></script>
-            <script src="../javascripts/ContactForm.js"></script>
-            <script src="../javascripts/SkillData.js"></script>
-            <script src="../javascripts/SkillConstructor.js"></script>
-            <script src="../javascripts/ScrollEffects.js"></script>
-            <script src="../javascripts/Header.js"></script>
-            <!--script src="../javascripts/Parallax.js"></script-->
+            <script src="../../../javascripts/Footer.js"></script>
+            <script src="../../../javascripts/ContactForm.js"></script>
+            <script src="../SkillData.js"></script>
+            <script src="../../../javascripts/SkillConstructorFar.js"></script>
+            <script src="../../../javascripts/ScrollEffects.js"></script>
+            <script src="../../../javascripts/Header.js"></script>
 
 </body>
 </html>
